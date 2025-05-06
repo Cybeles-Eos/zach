@@ -1,9 +1,14 @@
 :root {
-  --semi-dark: #1F1F1F;
-  --dark: #08090B;
-  --gray: #6E6E6F;
-  --shadow: #D8D8D8;
+  
+  --dark: #040506;
   --white: #F4F4F4;
+  --gray: #6E6E6F;
+
+  --light-green: #00FF11;
+  --semi-gray: #777777;
+
+  --shadow: #D8D8D8;
+  --dark-shadow: #0B0C0D;
 
   --inter: 'Inter', sans-serif;
   --poppins: 'Poppins', sans-serif;
@@ -31,7 +36,7 @@
 }
 
 body,html{
-  background-color: #F4F4F4;
+  background-color: var(--dark);
 }
 
 html {

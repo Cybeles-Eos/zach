@@ -4,8 +4,9 @@ import CSS from './nav.module.css'
 function Nav(){
    return(
       <>
-         <main className={CSS.main}>
-
+         <main className={`${CSS.main}`}>
+            <h1 className={`${CSS.logo}`}>Z</h1>
+            
          </main>
 
          <Outlet />

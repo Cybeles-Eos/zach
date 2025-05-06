@@ -1,5 +1,17 @@
 .main{
-   width: 20rem;
-   height: 4rem;
+   width: 32em;
+   height: 3.3rem;
+   position: fixed;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 100;
    background-color: #1d2026;
+   color: var(--white);
+   padding: 5px 10px;
+   border-radius: 5px;
+   margin-top: 18px;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
