@@ -8,14 +8,19 @@ import Home from './assets/pages/home/home.jsx'
 import Project from './assets/pages/project/project.jsx'
 import About from './assets/pages/about/about.jsx'
 
+import SmoothScrollWrapper from './smoothscrollwrapper.jsx'
+
 createRoot(document.getElementById('root')).render(
-  <HashRouter>
-    <Routes>
-      <Route path='/' element={<Nav />}>
-        <Route index element={<Home />}/>
-        <Route path='/project' element={<Project />}/>
-        <Route path='/about' element={<About />}/>
-      </Route>
-    </Routes>
-  </HashRouter>
+  <SmoothScrollWrapper>
+    <HashRouter>
+      <Routes>
+        <Route path='/' element={<Nav />}>
+          <Route index element={<Home />}/>
+          <Route path='/project' element={<Project />}/>
+          <Route path='/about' element={<About />}/>
+        </Route>
+      </Routes>
+    </HashRouter>
+  </SmoothScrollWrapper>
+
 )
