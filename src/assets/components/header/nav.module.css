@@ -109,7 +109,7 @@
       display: var(--block);
       position: fixed;
       width: 90%;
-      height: 16rem;
+      height: 15rem;
       top: 4.6rem;
       left: 50%;
       transform: translateX(-50%);
