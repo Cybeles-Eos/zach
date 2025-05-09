@@ -22,7 +22,7 @@ function Home(){
 
             </div>
             <section className={CSS.main_body}>
-               <div class={CSS.marquee_container}>
+               <div className={CSS.marquee_container}>
                   <div class={CSS.marquee}>
                      <span>
                         Frontend web-developer • UI / UX • Backend web-developer • Frontend web-developer • UI / UX • Backend web-developer •
