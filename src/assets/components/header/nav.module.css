@@ -1,16 +1,7 @@
 .nav{
-   width: 35em;
-   height: 3.2rem;
-   position: fixed;
-   left: 50%;
-   transform: translateX(-50%);
-   z-index: 1000;
-
-   background: rgba(0, 0, 0, 0.4); /* semi-transparent */
-   backdrop-filter: blur(10px); /* blur for glass effect */
-   -webkit-backdrop-filter: blur(10px); /* Safari support */
-   border-radius: 12px; /* rounded corners */
-   /* border: 1px solid rgba(255, 255, 255, 0.1); subtle border */
+   max-width: 1270px;
+   height: 4rem;
+   margin: 0 auto;   
 
 
    color: var(--white);
@@ -21,30 +12,24 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   transition: 1s;
 }
 
 .logo{
-   font-weight: 800;
+   font-weight: 700;
    position: relative;
    margin-left: .7rem;
+   font-style: italic;
+   letter-spacing: -1px;
+   user-select: none;
+   cursor: pointer;
+
+ 
+   display: flex;
+}.logo > span{
+   display: block;
+   margin-top: 3px;
 }
-.logo::before{
-   content: 'Z';
-   position: absolute;
-   left: -4px;
-   font-weight: 800;
-   color: #d9d9d9ec;
-   z-index: -1;
-}
-.logo::after{
-   content: 'Z';
-   position: absolute;
-   left: -8px;
-   font-weight: 800;
-   color: #bcbebee7;
-   z-index: -2;
-}
+
 
 
 
@@ -53,23 +38,24 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 10px;
+   gap: 2rem;
 }
 .links_soc > ul{
    display: flex;
    align-items: center;
-   gap: 30px;
+   gap: 4rem;
    margin-right: 13px;
 }
 .link{
-   font-size: 13px;
-   font-weight: 300;
+   font-size: 15px;
+   font-weight: 400;
+   color: var(--white);
 }
 .button_con{
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 11px;
+   gap: 1.1rem;
 }
 .social_btn{
    background-color: transparent;
