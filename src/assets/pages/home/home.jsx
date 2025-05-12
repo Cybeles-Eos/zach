@@ -8,29 +8,7 @@ function Home(){
       <>
 
          <main className={CSS.main}>
-            <div className={CSS.video_con}>
-               <video
-                  className={CSS.video}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-               >
-                  <source src={vide} type="video/mp4" />
-               </video>
-               {/* <img src={cyber} className={CSS.video} alt="" /> */}
-
-            </div>
-            <section className={CSS.main_body}>
-               <div className={CSS.marquee_container}>
-                  <div class={CSS.marquee}>
-                     <span>
-                        Frontend web-developer • UI / UX • Backend web-developer • Frontend web-developer • UI / UX • Backend web-developer •
-                     </span>
-                  </div>
-               </div>
-
-            </section>
+        
          </main>
       </>
    )
