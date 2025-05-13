@@ -39,6 +39,7 @@
    justify-content: center;
    align-items: center;
    gap: 2rem;
+   margin-right: .5rem;
 }
 .links_soc > ul{
    display: flex;
@@ -101,6 +102,7 @@
       left: 0;
       top: 4rem;
       z-index: 200;
+      margin-right: .2rem;
       flex-direction: column;
       background-color: rgb(43, 140, 224);
       background-color: var(--dark);
