@@ -14,10 +14,8 @@ function Nav(){
       const newToggle = !toggle;
       setToggle(newToggle);
    
-      const toggleData = document.querySelectorAll('[data-togglemenu]');
-      toggleData.forEach(data => {
-         data.setAttribute('data-togglemenu', newToggle ? 'open' : 'close');
-      });
+      const toggleData = document.querySelector('[data-togglemenu]');
+      toggleData.setAttribute('data-togglemenu', newToggle ? 'open' : 'close');
    };
    
 
