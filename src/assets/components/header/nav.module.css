@@ -75,9 +75,7 @@
    height: 24px;
    display: none;
 }
-.backgr{
-   display: none;
-}
+
 
 @media screen and (max-width: 700px) {
    [data-togglemenu="open"]{
