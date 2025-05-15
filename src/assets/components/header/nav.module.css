@@ -1,13 +1,12 @@
 .nav{
    max-width: 1370px;
-   height: 4rem;
+   height: 4.8rem;
    margin: 0 auto;   
-
+   
 
    color: var(--white);
-   padding: 5px 16px;
+   padding: 5px 19px;
    border-radius: 10px;
-   top: 15px;
 
    display: flex;
    justify-content: space-between;
@@ -38,31 +37,35 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 2rem;
+   gap: 2.4rem;
    margin-right: .5rem;
 }
 .links_soc > ul{
    display: flex;
    align-items: center;
-   gap: 3rem;
-   margin-right: 10px;
+   gap: 3.3rem;
 }
 .link{
-   font-size: 14px;
+   font-size: 13px;
    font-weight: 300;
    color: var(--white);
+   font-family: var(--poppins);
+}
+.link:hover{
+   opacity: .7;
 }
 .button_con{
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 1.1rem;
+   gap: .70rem;
 }
 .social_btn{
    background-color: transparent;
    border: none;
    cursor: pointer;
    height: 24px;
+   padding-bottom: 10px;
 }
 .icon_s{
    width: 26px;
