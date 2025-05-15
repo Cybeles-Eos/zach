@@ -40,9 +40,6 @@ function Nav(){
                   <button className={CSS.social_btn}>
                      <i>{github_i}</i>
                   </button>
-                  <button className={CSS.social_btn}>
-                     <i>{facebook_i}</i>
-                  </button>
                </div>   
             </div>
             <button onClick={toggleMenu} className={CSS.menu}>{toggle ? close_i : menu_i}</button>
