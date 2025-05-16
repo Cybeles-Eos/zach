@@ -9,6 +9,12 @@
    color: var(--white);
 }
 
+.main > h1{
+   color: var(--T-text);
+}
+.main > p{
+   color: var(--T-text);
+}
 
 @media screen and (max-width: 650px) {
   

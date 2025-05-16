@@ -9,7 +9,10 @@
 
    color: var(--white);
    padding: 5px 19px;
-   background-color: #04050677;
+   background-color: var(--dark-shade);
+
+   backdrop-filter: blur(5px);           
+   -webkit-backdrop-filter: blur(5px);   
 
    display: flex;
    justify-content: space-between;
@@ -24,7 +27,7 @@
    letter-spacing: -1px;
    user-select: none;
    cursor: pointer;
-
+   color: var(--T-text);
  
    display: flex;
 }.logo > span{
@@ -50,28 +53,60 @@
 }
 .link{
    font-size: 14px;
-   font-weight: 300;
-   color: var(--white);
+   font-weight: var(--DL-weight);
+   color: var(--T-text);
    font-family: var(--poppins);
 }
 .link:hover{
-   opacity: .7;
+   opacity: .85;
 }
 .button_con{
    display: flex;
    justify-content: center;
    align-items: center;
+   gap: 1.5rem;
+}
+.theme_btn{
+   display: grid;
+   align-content: center;
+   background-color: transparent;
+   border: none;
+   border-radius: 20rem;
+   cursor: pointer;
 }
 .social_btn{
    background-color: transparent;
    border: none;
    cursor: pointer;
-   height: 24px;
-   margin-bottom: 4px;
+
+   font-family: var(--poppins);
+   letter-spacing: .2px;
+   font-weight: 300;
+   font-size: 13px;
+
+   background-color: #191919;
+   border-radius: 200rem;
+   padding: 3px 7px 3px 15px;
+
+   display: flex;
+   align-items: center;
+   gap: 9px;
+   color: var(--white);
+   /* font-style: italic; */
+   transition: all 300ms;
+}
+.social_btn:hover{
+   box-shadow: 0px 0px 5px var(--dark-shadow);
+}
+.social_btn:active{
+   opacity: .9;
+}
+.social_btn > i{
+   margin-top: 2.5px;
 }
 .icon_s{
-   width: 28px;
-   height: 28px;
+   width: 24px;
+   height: 24px;
 
 }
 .menu{
@@ -83,7 +118,7 @@
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 660px) {
    [data-togglemenu="open"]{
       --block: block;
       --flex: flex;
@@ -92,11 +127,17 @@
       --block: none;
       --flex: none;
    }
+
    .logo{
       margin-left: .2rem;
    }
    .menu{
       display: block;
+   }
+   .nav_expand{
+      height: 23rem !important;
+      align-items: self-start !important;
+      padding-top: 1.4rem !important;
    }
    .links_soc{
       display: var(--flex);
@@ -104,22 +145,34 @@
       width: 100%;
       height: 17rem;
       left: 0;
-      top: 4rem;
+      top: 4.8rem;
       z-index: 200;
       margin-right: .2rem;
       flex-direction: column;
-      background-color: rgb(43, 140, 224);
-      background-color: var(--dark);
+      gap: 2rem;
    }
    .links_soc > ul{
       flex-direction: column;
       margin-right: 0px;
       gap: 2.4rem;
+ 
    }
    .link{
       font-size: 14px;
+      font-weight: var(--DL-weight);
+   }
+
+   .button_con{
+      width: 100%;
+      padding: 0px 1.3rem;
+      flex-direction: column;
+   }
+   .social_btn{
+      justify-content: center;
+      width: 100%;
       font-weight: 400;
-      color: var(--white);
+      font-family: 14px;
+      border-radius: 5px;
    }
    .icon_s{
       width: 31px;
