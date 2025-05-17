@@ -131,9 +131,11 @@
       display: block;
    }
    .nav_expand{
-      height: 23rem !important;
+      height: 22rem !important;
       align-items: self-start !important;
-      padding-top: 1.4rem !important;
+      padding-top: 1.14rem !important;
+
+      
    }
    .links_soc{
       display: var(--flex);
