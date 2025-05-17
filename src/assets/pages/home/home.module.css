@@ -2,12 +2,29 @@
    max-width: 1600px;
    margin: 0 auto;
    position: relative;
-   height: 100rem;
-   padding: 1rem 3.5rem;
-   padding-top: 5rem;
+   /* height: 40rem; */
+   padding: 5rem 3.5rem 3rem 3.5rem;
    margin-top: 3rem;
    color: var(--white);
+   overflow: hidden;
 }
+.main::after {
+  position: absolute;
+  content: '';
+  top: -208px; /* -18rem = -288px */
+  right: 80px; /* 5rem = 80px */
+  width: 600px; /* 40rem = 640px */
+  height: 600px;
+  z-index: 1;
+  background-image: url('/done.png'); /* Assuming image is in public folder */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  transform: rotate(-135deg);
+  /* transition-delay: 0.2s; */
+  transition: all 1s;
+}
+
 
 .main > h1, .main > p{
    color: var(--T-text);
@@ -17,13 +34,17 @@
 
 .inc{
    margin-left: 1rem;
+   z-index: 2;
+   position: relative;
 }
 
 .title{
    font-size: 60px;
    max-width: 40rem;
    line-height: 4.3rem;
+   letter-spacing: .6px;
    color: var(--T-text);
+   font-family: var(--switzer-b);
 }
 .title_label{
    font-size: 14px;
@@ -66,19 +87,56 @@
    padding-inline: 1.7rem !important;
 }
 
+
+
+
 .bb{
-   width: 100%;
-   margin-top: 3rem;
+   max-width: 1600px;
+   margin: 0 auto;
+   margin-top: 3rem !important;
    padding: 2rem;
    padding-bottom: 16rem;
-   
+   background-color:hsla(144,100%,85%,1);
+   background-image:
+   radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%),
+   radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
+   radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+   radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
+   radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+   radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
+   radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
+   margin-bottom: 20rem !important;
 }
 .bb > p{
    font-size: 3.5rem;
    max-width: 70%;
    line-height: 55px;
    text-align: justify;
+   font-family: var(--switzer-r);
 }
+
+.intfoo_con {
+   margin-top: 3rem;
+   max-width: 450px;
+   display: flex;
+   flex-direction: column;
+   justify-self: flex-end;
+   align-items: flex-end;
+
+   align-items: self-start;
+   color: var(--gray);
+   gap: .7rem;
+}
+.intfoo_con > h1{
+   font-size: 2rem;
+   line-height: 3.5rem;
+   font-family: var(--switzer-b);
+}
+.intfoo_con > p{
+   font-size: 14px;
+   
+}
+
 @media screen and (max-width: 650px) {
   
 }

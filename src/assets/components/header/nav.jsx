@@ -31,7 +31,7 @@ function Nav(){
       setCTheme(newTheme);
    
       const html = document.getElementsByTagName('html')[0];
-      html.setAttribute('data-theme', newTheme ? 'light' : 'dark');
+      html.setAttribute('data-theme', newTheme ? 'dark' : 'light');
    }
 
    return(

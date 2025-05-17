@@ -1,3 +1,12 @@
+@font-face {
+  font-family: switzerR;
+  src: url(/Switzer-Regular.otf);
+}
+@font-face {
+  font-family: switzerB;
+  src: url(/Switzer-Semibold.otf);
+}
+
 :root {
   --dark: #040506;
   /* #040506 */
@@ -9,7 +18,9 @@
   --semi-gray: #777777;
   --shadow: #D8D8D8;
   --dark-shadow: #0b0c0d8a;
-
+  
+  --switzer-b: switzerB, sans-serif;
+  --switzer-r: switzerR, sans-serif;
   --inter: 'Inter', sans-serif;
   --poppins: 'Poppins', sans-serif;
 
