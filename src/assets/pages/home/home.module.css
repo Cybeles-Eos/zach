@@ -1,10 +1,84 @@
 .main{
-   max-width: 1660px;
+   max-width: 1600px;
    margin: 0 auto;
    position: relative;
    height: 100rem;
+   padding: 1rem 3.5rem;
+   padding-top: 5rem;
+   margin-top: 4rem;
+   color: var(--white);
 }
 
+.main > h1, .main > p{
+   color: var(--T-text);
+   font-family: var(--Poppins);
+}
+
+
+.inc{
+   margin: 0 0 0 2rem;
+}
+
+.title{
+   font-size: 60px;
+   max-width: 40rem;
+   line-height: 4.3rem;
+   color: var(--T-text);
+}
+.title_label{
+   font-size: 14px;
+   max-width: 34rem;
+   margin-top: 1.3rem;
+   line-height: 23px;
+   color: var(--gray) !important;
+}
+
+.intBtn_con{
+   margin-top: 1.4rem;
+   display: flex;
+   gap: .9rem;
+}
+.intro_btn{
+   padding: 9px 1.2rem;
+   background-color: transparent;
+   border: none;
+   font-family: var(--Poppins);
+   font-size: 13px;
+   border-radius: 7px;
+   cursor: pointer;
+}
+.intro_btn:hover{
+   opacity: .85;
+}
+.gt_project{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: .7rem;
+   color: var(--white);
+   background-color: #191919;
+}.gt_project > span{
+   margin-top: 3px;
+}
+.resume{
+   border: var(--T-text) 1px solid;
+   color: var(--T-text);
+   padding-inline: 1.7rem !important;
+}
+
+.bb{
+   width: 100%;
+   margin-top: 3rem;
+   padding: 2rem;
+   padding-bottom: 16rem;
+   
+}
+.bb > p{
+   font-size: 3.5rem;
+   max-width: 70%;
+   line-height: 55px;
+   text-align: justify;
+}
 @media screen and (max-width: 650px) {
   
 }
