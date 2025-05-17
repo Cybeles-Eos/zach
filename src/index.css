@@ -25,7 +25,7 @@
 [data-theme='dark'] {
   --T-text: #F4F4F4;
   --B-back: #040506;
-  --dark-shade: #04050649;
+  --dark-shade: #04050611;
   --DL-weight: 300;
   
 
@@ -45,12 +45,12 @@
   --DL-weight: 400;
 
   --grad-b: hsla(278,0%,91%,1);
-  --grad-1: rgb(209, 209, 250);
-  --grad-2: rgb(194, 194, 252);
-  --grad-3: rgb(187, 187, 253);
-  --grad-4: rgb(194, 194, 248);
+  --grad-1: rgb(234, 234, 253);
+  --grad-2: rgb(226, 226, 255);
+  --grad-3: rgb(218, 218, 255);
+  --grad-4: rgb(255, 255, 255);
   --grad-5: rgb(215, 215, 250);
-  --grad-6: rgb(175, 175, 238);
+  --grad-6: rgb(247, 242, 252);
   --grad-7: rgb(219, 219, 255);
 }
 
@@ -79,12 +79,12 @@ body::after{
   background-color: var(--grad-b);
   background-image:
   radial-gradient(at 31% 1%, var(--grad-1) 0px, transparent 50%),
-  radial-gradient(at 90% 1%, var(--grad-1) 0px, transparent 50%),
-  radial-gradient(at 100% 9%, var(--grad-1) 0px, transparent 50%),
-  radial-gradient(at 61% 100%, var(--grad-1) 0px, transparent 50%),
-  radial-gradient(at 22% 100%, var(--grad-1) 0px, transparent 50%),
-  radial-gradient(at 87% 73%, var(--grad-1) 0px, transparent 50%),
-  radial-gradient(at 2% 4%, var(--grad-1) 0px, transparent 50%);
+  radial-gradient(at 90% 1%, var(--grad-2) 0px, transparent 50%),
+  radial-gradient(at 100% 9%, var(--grad-3) 0px, transparent 50%),
+  radial-gradient(at 61% 100%, var(--grad-4) 0px, transparent 50%),
+  radial-gradient(at 22% 100%, var(--grad-5) 0px, transparent 50%),
+  radial-gradient(at 87% 73%, var(--grad-6) 0px, transparent 50%),
+  radial-gradient(at 2% 4%, var(--grad-7) 0px, transparent 50%);
   animation: gradient 13s ease infinite;
 }
 @keyframes gradient {
