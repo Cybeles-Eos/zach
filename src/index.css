@@ -8,7 +8,7 @@
   --light-green: #00FF11;
   --semi-gray: #777777;
   --shadow: #D8D8D8;
-  --dark-shadow: #0B0C0D;
+  --dark-shadow: #0b0c0d8a;
 
   --inter: 'Inter', sans-serif;
   --poppins: 'Poppins', sans-serif;
@@ -25,14 +25,33 @@
 [data-theme='dark'] {
   --T-text: #F4F4F4;
   --B-back: #040506;
-  --dark-shade: #0405069d;
+  --dark-shade: #04050649;
   --DL-weight: 300;
+  
+
+  --grad-b: hsla(0,0%,0%,1);
+  --grad-1: hsla(240,0%,5%,1);
+  --grad-2: hsla(240,0%,5%,1);
+  --grad-3: hsla(0,0%,0%,1);
+  --grad-4: hsla(240,4%,8%,1);
+  --grad-5: hsla(240,4%,5%,1);
+  --grad-6: hsla(240,3%,3%,1);
+  --grad-7: hsla(0,0%,0%,1);
 }
 [data-theme='light'] {
   --T-text: #1F1F1F;
   --B-back: #EBEBEB;
-  --dark-shade: #ececec42;
+  --dark-shade: #ececec1e;
   --DL-weight: 400;
+
+  --grad-b: hsla(278,0%,91%,1);
+  --grad-1: hsla(240,65%,87%,1);
+  --grad-2: hsla(240,77%,77%,1);
+  --grad-3: hsla(240,86%,76%,1);
+  --grad-4: hsla(240,86%,76%,1);
+  --grad-5: hsla(240,73%,83%,1);
+  --grad-6: hsla(240,40%,56%,1);
+  --grad-7: hsla(240,77%,85%,1);
 }
 
 
@@ -48,9 +67,22 @@
 
 }
 
-body,html{
-  background-color: var(--B-back);
+body::after{
+  position: fixed;
+  content: '';
+  inset: 0;
+  z-index: -1;
   
+
+  background-color: var(--grad-b);
+  background-image:
+  radial-gradient(at 31% 1%, var(--grad-1) 0px, transparent 50%),
+  radial-gradient(at 90% 1%, var(--grad-1) 0px, transparent 50%),
+  radial-gradient(at 100% 9%, var(--grad-1) 0px, transparent 50%),
+  radial-gradient(at 61% 100%, var(--grad-1) 0px, transparent 50%),
+  radial-gradient(at 22% 100%, var(--grad-1) 0px, transparent 50%),
+  radial-gradient(at 87% 73%, var(--grad-1) 0px, transparent 50%),
+  radial-gradient(at 2% 4%, var(--grad-1) 0px, transparent 50%);
 }
 
 html {
