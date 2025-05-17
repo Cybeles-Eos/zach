@@ -21,11 +21,8 @@ function Nav(){
    
       const toggleData = document.querySelector('[data-togglemenu]');
       toggleData.setAttribute('data-togglemenu', newToggle ? 'open' : 'close');
-<<<<<<< HEAD
-=======
       const nav = document.getElementById('navbar');
       newToggle ? nav.classList.add(CSS.nav_expand) : nav.classList.remove(CSS.nav_expand);
->>>>>>> design_one
    };
    
    let [cTheme, setCTheme] = useState(false);

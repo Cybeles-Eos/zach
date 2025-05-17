@@ -2,12 +2,6 @@
    /* max-width: 1370px; */
    height: 4.2rem;
    margin: 0 auto;   
-<<<<<<< HEAD
-   color: var(--white);
-   padding: 5px 16px;
-   border-radius: 10px;
-   top: 15px;
-=======
    position: fixed;
    width: 100%;
    z-index: 100;
@@ -20,7 +14,6 @@
    backdrop-filter: blur(8px);           
    -webkit-backdrop-filter: blur(8px);   
 
->>>>>>> design_one
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -34,11 +27,8 @@
    letter-spacing: -1px;
    user-select: none;
    cursor: pointer;
-<<<<<<< HEAD
-=======
    color: var(--T-text);
  
->>>>>>> design_one
    display: flex;
 }.logo > span{
    display: block;
@@ -122,10 +112,6 @@
    height: 24px;
    display: none;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> design_one
 
 
 @media screen and (max-width: 660px) {
