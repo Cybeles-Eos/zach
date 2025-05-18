@@ -4,7 +4,7 @@
    margin: 0 auto;   
    position: fixed;
    width: 100%;
-   z-index: 100;
+   z-index: 100 !important;
    top: 0;
 
    color: var(--white);
@@ -18,7 +18,9 @@
    justify-content: space-between;
    align-items: center;
 }
-
+.nav, *{
+   z-index: 100 !important;
+}
 .logo{
    font-weight: 700;
    position: relative;
