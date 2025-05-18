@@ -1,11 +1,12 @@
 import CSS from './home.module.css'
 import obj_cir from '/done.png'
-
+import { useEffect, useRef } from "react";
 function Home(){
    const right_i = <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="var(--white)" viewBox="0 0 16 16"><path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/></svg>;
 
+
    return(
-      <>
+      <> 
          <article className={CSS.intro_con}>
             <div className={CSS.intro_body}>
                <h1 className={CSS.title}>Creating Modern
@@ -22,9 +23,14 @@ function Home(){
          </article>
 
 
-         <div className={CSS.main}>
-            <p>I believe in the power of thoughtful design, clean code, and seamless user experiences creating websites that are fast, easy to use, and beautifully designed for everyone.</p>
+         <div className={CSS.intr_section}>
+            <div className={CSS.believe_body}>
+               <p>I believe in the power of thoughtful design, clean code, and seamless user experiences creating websites that are fast, easy to use, and beautifully designed for everyone.</p>
+            </div>
          </div>
+
+ 
+
       </>
    )
 }
