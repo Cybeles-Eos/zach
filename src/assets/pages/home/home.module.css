@@ -23,14 +23,49 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   position: relative;
+
 }
-.intro_img{
-   width: 90%;
-   transition: all 1.3s ease-in-out;
-   z-index: -1 !important;
-   transform: scale(1.8);
-   rotate: -12deg;
+@keyframes rotateLeft {
+  from {
+    transform: rotate(0deg) scaleX(1);
+  }
+  to {
+    transform: rotate(-360deg) scaleX(1.2);
+  }
 }
+
+@keyframes rotateRight {
+  from {
+    transform: rotate(0deg) scaleX(1);
+  }
+  to {
+    transform: rotate(360deg) scaleX(1.2);
+  }
+}
+
+.intro_img_in,
+.intro_img_out {
+  position: absolute;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.intro_img_out {
+  height: 25rem;
+  width: 40rem;
+  animation-name: rotateRight;
+}
+
+.intro_img_in {
+  height: 25rem;
+  width: 40rem;
+ 
+  animation-name: rotateLeft;
+}
+
+
 
 
 .intro_body{
