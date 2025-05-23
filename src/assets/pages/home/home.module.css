@@ -155,6 +155,10 @@
    .title{
       font-size: 7.6rem;
    }
+
+   .ast{
+      font-size: 2.2rem;
+   }
 }
 
 @media screen and (max-width: 660px) {
@@ -228,4 +232,18 @@
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
