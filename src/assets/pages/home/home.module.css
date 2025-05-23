@@ -210,6 +210,7 @@
    .title_label{
       font-size: 13px;
       line-height: 20px;
+      margin-inline: .4rem;
    }
    .intBtn_con{
       margin-top: 1.5rem;
