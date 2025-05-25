@@ -346,6 +346,11 @@
       width: 100%;
       padding: 3rem 1.8rem;
    }
+   .whyMe_body > p{
+      font-size: 6vw;
+      line-height: 10.2vw;
+   }  
+
 }
 
 
