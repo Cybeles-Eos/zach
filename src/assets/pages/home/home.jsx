@@ -2,11 +2,11 @@ import CSS from './home.module.css'
 import { useEffect, useRef } from "react";
 
 import Footer from '../../components/footer/footer.jsx';
+import project from '/ProjectVid.mp4';
 
 function Home(){
    const right_i = <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="var(--white)" viewBox="0 0 16 16"><path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/></svg>;
 
- 
 
 
    return(
@@ -34,17 +34,23 @@ function Home(){
                </div>
             </div>
          </article>
+         <section className={CSS.code}>
+            <div className={CSS.code_header}>
+               <p>As a frontend</p>
+               <h2>I build ideas into reality</h2>
+            </div>
+            <div className={CSS.code_video_body}>
+               <div className={CSS.video_wrapper}>
+                  <video className={CSS.video} src={project} autoPlay muted loop playsInline />
+               </div>
+            </div>
+
+         </section>
          <div style={{width: "100%", height: "100rem"}}>
 
          </div>
          
          <Footer />
-   
-
- 
-         <div className={CSS.anime_int}>
-            <p>*</p>
-         </div>
       </>
    )
 }
