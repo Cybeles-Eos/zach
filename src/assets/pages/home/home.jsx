@@ -44,7 +44,11 @@ function Home(){
                   <video className={CSS.video} src={project} autoPlay muted loop playsInline />
                </div>
             </div>
-
+         </section>
+         <section className={CSS.why_me}>
+            <div className={CSS.whyMe_body}>
+               <p><span>Why me</span>I work closely with my clients as partners to handle different marketing needs. From ideas to execution, I manage everything in one place. I don’t believe in average work—I always aim for better. This helps me deliver strong, lasting results.</p>
+            </div>
          </section>
          <div style={{width: "100%", height: "100rem"}}>
 

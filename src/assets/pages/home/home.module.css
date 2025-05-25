@@ -141,7 +141,7 @@
 .code{
    max-width: 1500px;
    margin: 1rem auto;
-   margin-top: 8.8rem;
+   margin-top: 6.5vw;
    padding: 1rem 3rem;
    display: flex;
    flex-direction: column;
@@ -171,7 +171,6 @@
 .code_video_body {
   width: 80vw;
   aspect-ratio: 2;
-  background-color: #191919;
   overflow: hidden;
   position: relative;
   clip-path: inset(0 round 8px); /* replaces border-radius */
@@ -196,11 +195,31 @@
 }
 
 
-
-
-
-
-
+.why_me{
+   width: 100%;
+   padding: 3rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 4vw;
+}
+.whyMe_body{
+   max-width: 1100px;
+   position: relative;
+   display: flex;
+   padding-inline: 2.3rem;
+}
+.whyMe_body > p{
+   font-size: 3.4vw;
+   color: var(--T-text);
+   line-height: 4.6vw;
+}  
+.whyMe_body > p > span{
+   font-size: .85rem;
+   color: var(--T-text);
+   margin-right: 1rem;
+   display: inline-block;
+}
 
 
 
@@ -213,13 +232,23 @@
    .ast{
       font-size: 2.2rem;
    }
-
+   .code{
+      margin-top: 4rem;
+   }
    .code_video_body{
       width: 75rem;
       aspect-ratio: 2;
       background-color: #191919;
       border-radius: 8px;
    }
+   .why_me{
+      margin-top: 3rem;
+   }
+   .whyMe_body > p{
+      font-size: 3.1rem;
+      color: var(--T-text);
+      line-height: 4rem;
+   }  
 }
 
 @media screen and (max-width: 660px) {
@@ -244,6 +273,17 @@
    }
    .code_video_body{
       width: 90vw;
+   }
+   .whyMe_body{
+      padding-inline: .1rem;
+   }
+   .whyMe_body > p{
+      font-size: 4.7vw;
+      line-height: 8vw;
+   }  
+   .whyMe_body > p > span{
+      font-size: .65rem;
+      margin-right: .87rem;
    }
 }
 
@@ -301,6 +341,10 @@
    .code_header > h2{
       font-size: 18px;
       text-align: center;
+   }
+   .why_me{
+      width: 100%;
+      padding: 3rem 1.8rem;
    }
 }
 
