@@ -1,132 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
-@font-face {
-  font-family: switzerR;
-  src: url(/Switzer-Regular.otf);
-}
-@font-face {
-  font-family: switzerB;
-  src: url(/Switzer-Semibold.otf);
-}
+@import "tailwindcss";
+
 
 :root {
-  --dark: #040506;
-  --semi-dark: #1d2026;
-  /* #040506 */
-  --white: #F4F4F4;
-  --gray: #6E6E6F;
-
-
-  --light-green: #00FF11;
-  --semi-gray: #777777;
-  --shadow: #D8D8D8;
-  --dark-shadow: #0b0c0d8a;
-  
-  --switzer-b: switzerB, sans-serif;
-  --switzer-r: switzerR, sans-serif;
   --inter: 'Inter', sans-serif;
   --inter-tight: "Inter Tight", sans-serif;
   --poppins: 'Poppins', sans-serif;
+  --darkM: #191919;
+  --semi-drk: #1F1F1F;
+  --pure-dark: #070707;
+  --grayM:#878787;
+  --shadow: #2A2A2A;
+  --whiteM: #F4F4F4;
+}
 
-  --large-font: 80px;
-  --small-font: 14px;
+/* @theme {
+  --color-cDark: var(--dark);
+  --font-poppinsMine: var(--poppins), sans-serif;
+} */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background-color: var(--pure-dark);
+}
+
+@layer base{
+  #logo_nav{
+    font-family: var(--poppins);
+    color: var(--whiteM);
+  }
+  h1, p, a{
+    font-family: var(--inter);
+  }
+  .poppins_font{
+    font-family: var(--poppins);
+  }
+}
+
+@layer components {
+  .link{
+    width: 5rem;
+    height: 100%;
+    background-color: #0074BD;
+    border-radius: 3px;
+    background-color: var(--semi-drk);
+    font-family: var(--poppins);
+    font-size: 13px;
+    color: var(--whiteM);
+    font-weight: 300;
+  }
+}
+
+.quotes_event:hover .btn_nav{
+  @apply top-[0rem];
+}
+.btn_nav{
+  font-family: var(--poppins);
+  font-size: 13px;
+  transition: 200ms;
+  background: linear-gradient(
+    #0074BD,
+    #97D7FF
+  );
+}
+.active{
+  background: linear-gradient(
+    #0074BD,
+    #97D7FF
+  );
+}
+
+@utility flex-center {
+  @apply flex justify-center items-center;
 }
 
 [data-theme='dark'] {
-  --T-text: #F4F4F4;
-  --B-back: #040506;
-  --dark-shade: #04050611;
-  --DL-weight: 300;
-  
-  --bg-main: #141415;
-}
-[data-theme='light'] {
-  --T-text: #1F1F1F;
-  --B-back: #EBEBEB;
-  --dark-shade: #ececec1e;
-  --DL-weight: 400;
-
-  --bg-main: #F6F4EF;
-}
-
-
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
-
-  font-family: var(--inter);
-
-}
-
-
-
-body::after{
-  position: fixed;
-  content: '';
-  inset: 0;
-  z-index: -1;
-  
-
-  background-color: var(--bg-main);
  
 }
-@keyframes gradient {
-  0% {
-    background-position: 0% 20%;
-  }
-  25% {
-    background-position: 100% 50%;
-  }
-  50% {
-    background-position: 50% 70%;
-  }
-  100% {
-    background-position: 0% 20%;
-  }
-}
-html {
-  -webkit-text-size-adjust: 100%;
-}
+[data-theme='light'] {
 
-button, a{
-  -webkit-tap-highlight-color: transparent;
 }
-
-li{
-  list-style: none;
-}
-a{
-  text-decoration: none;
-  color: var(--white);
-}
-
-.no-drag {
-  -webkit-user-drag: none;
-}
-.no-callout {
-  /* Disable hold touch (copy/save) */
-  -webkit-touch-callout: none;
-}
-
 
 ::-webkit-scrollbar{
   width: 0px;
   height: 0px;
 }
-::-webkit-scrollbar-track{
-  background-color: rgba(141, 141, 141, 0.445);
-}
-::-webkit-scrollbar-thumb{
-  background: var(--dark);
-  border-radius: 222px;
-}
-
-

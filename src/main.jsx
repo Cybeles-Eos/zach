@@ -1,12 +1,11 @@
-
 import { createRoot } from 'react-dom/client'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 
-import Nav from './assets/components/header/nav.jsx'
-import Home from './assets/pages/home/home.jsx'
-import Project from './assets/pages/project/project.jsx'
-import About from './assets/pages/about/about.jsx'
+import Nav from './assets/components/nav.jsx'
+import Home from './assets/pages/home.jsx'
+import Project from './assets/pages/project.jsx'
+import About from './assets/pages/about.jsx'
 
 import SmoothScrollWrapper from './smoothscrollwrapper.jsx'
 
