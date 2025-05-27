@@ -1,12 +1,16 @@
 
-import Navigator from "../components/navigator"
 import Footer from "../components/footer/footer"
-import { useEffect } from "react"
+import { useEffect, useRef } from "react";
+import { useLayoutEffect } from "react";
+import { useLocation } from "react-router-dom";
+import Navigator from "../components/navigator";
 
 function Project(){
+   const location = useLocation();
+
    useEffect(() => {
-      window.scrollTo(0, 0)
-   }, []);
+      window.scrollTo({ top: 0});
+   }, [location.pathname]);
 
    return(
       <>

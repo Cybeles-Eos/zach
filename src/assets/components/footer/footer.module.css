@@ -3,7 +3,7 @@
    /* height: 22rem; */
    padding: 1.5rem;
    padding-bottom: 2.5rem;
-   background-color: #F4F4F4;
+   background-color: var(--foo-bg);
    margin-top: 1rem;
 }
 
@@ -16,7 +16,7 @@
    font-size: 1.4rem;
    user-select: none;
    cursor: pointer;
-   color: var(--darkM);
+   color: var(--foo-lg);
    font-family: var(--poppins);
    display: flex;
    align-items: center;
@@ -78,7 +78,7 @@
    display: flex;
    gap: 1.8rem;
    font-size: 13px;
-   color: var(--darkM);
+   color: var(--foo-lg);
 }
 .term_box > p{
    cursor: pointer;
@@ -98,7 +98,7 @@
 }
 .con{
    font-weight: 500;
-   color: var(--darkM);
+   color: var(--foo-lg);
    font-family: var(--poppins);
    
 }

@@ -19,13 +19,13 @@
 } */
 
 body{
-  background-color: var(--pure-dark);
+  background-color: var(--bg-clr);
 }
 
 @layer base{
   #logo_nav{
     font-family: var(--poppins);
-    color: var(--whiteM);
+    color: var(--text-clr);
   }
   h1, p, a{
     font-family: var(--inter);
@@ -46,6 +46,8 @@ body{
     font-size: 13px;
     color: var(--whiteM);
     font-weight: 300;
+  
+  
   }
 }
 
@@ -56,6 +58,7 @@ body{
   font-family: var(--poppins);
   font-size: 13px;
   transition: 200ms;
+  color: var(--whiteM);
   background: linear-gradient(
     #0074BD,
     #97D7FF
@@ -73,13 +76,44 @@ body{
 }
 
 [data-theme='dark'] {
- 
+  --text-clr: #F4F4F4;
+  --bg-clr: #070707;
+  --navigator-bg: #19191900;
+  --navigator-brd: #2A2A2A;
+  --img-opa: 0.4;
+
+  --foo-bg: #F4F4F4;
+  --foo-lg: #181818;
 }
 [data-theme='light'] {
+  --text-clr: #181818;
+  --bg-clr: #F4F4F4;
+  --navigator-bg: #191919;
+  --navigator-brd: #2a2a2a00;
+  --img-opa: 0.9;
 
+  --foo-bg: #070707;
+  --foo-lg: #F4F4F4;
+  
 }
 
 ::-webkit-scrollbar{
   width: 0px;
   height: 0px;
+}
+
+
+
+
+.spiral-animation{
+  top: -32rem;
+  rotate: -150deg;
+  animation: showTop 1.5s ease forwards;
+  animation-delay: 200ms;
+}
+@keyframes showTop{
+  to{
+    top: -22rem;
+    rotate: -178deg;
+  }
 }

@@ -9,8 +9,10 @@ import About from './assets/pages/about.jsx'
 
 import SmoothScrollWrapper from './smoothscrollwrapper.jsx'
 
+
 createRoot(document.getElementById('root')).render(
-  <SmoothScrollWrapper>
+  
+  // <SmoothScrollWrapper>
     <HashRouter>
       <Routes>
         <Route path='/' element={<Nav />}>
@@ -20,6 +22,6 @@ createRoot(document.getElementById('root')).render(
         </Route>
       </Routes>
     </HashRouter>
-  </SmoothScrollWrapper>
+  // </SmoothScrollWrapper>
 
 )
