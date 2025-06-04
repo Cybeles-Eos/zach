@@ -1,12 +1,34 @@
-# React + Vite
+# Zach | Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio repository.  
+Here, you'll find a collection of projects that demonstrate my skills in modern web development using **React**, **Tailwind CSS**, **JavaScript**, **HTML5**, and **CSS3**.
 
-Currently, two official plugins are available:
+## 🚀 About This Portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio website showcases my ability to build responsive, user-friendly web applications with clean, maintainable code. It highlights:
 
-## Expanding the ESLint configuration
+- Fast and modern React components using hooks
+- Tailwind CSS for rapid and consistent styling  
+- Semantic HTML and accessible UI design  
+- JavaScript functionality and interactivity  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🖥️ Homepage Preview
+
+![Homepage Screenshot](./public/portfolio.png)
+
+---
+
+## 📂 Projects
+
+Explore individual project folders for detailed descriptions, live demos, and source code.
+
+## 📫 Connect With Me
+
+- Portfolio Website: [https://zach-portfolio-sigma.vercel.app/](https://zach-portfolio-sigma.vercel.app/)
+- LinkedIn: [https://www.linkedin.com/in/dawn-izach-cruz-a5b405367/](https://www.linkedin.com/in/dawn-izach-cruz-a5b405367/)
+- Email: cruzdawn58@gmail.com
+
+
+---
+
+Thank you for visiting! Feel free to reach out or contribute.

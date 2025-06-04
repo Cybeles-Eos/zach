@@ -1,0 +1,136 @@
+.foo{
+   width: 100%;
+   /* height: 22rem; */
+   padding: 1.5rem;
+   padding-bottom: 2.5rem;
+   background-color: var(--foo-bg);
+   margin-top: 1rem;
+  
+}
+
+.logo{
+   font-weight: 700;
+   position: relative;
+   margin-left: .7rem;
+   font-style: italic;
+   letter-spacing: -1px;
+   font-size: 1.4rem;
+   user-select: none;
+   cursor: pointer;
+   color: var(--foo-lg);
+   font-family: var(--poppins);
+   display: flex;
+   align-items: center;
+    z-index: 50;
+}.logo > span{
+   display: block;
+   margin-top: 3px;
+   height: fit-content;
+   margin-bottom: 2px;
+}
+
+
+
+.foo_body{
+   max-width: 1300px;
+   margin: 0 auto;
+   margin-top: 4rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.foo_body > p{
+   font-family: var(--poppins);
+   text-align: center;
+   max-width: 580px;
+   font-size: 13px;
+   line-height: 22px;
+   margin-top: 1.2rem;
+   margin-inline: 1rem;
+   color: var(--grayM);
+    z-index: 50;
+}
+
+.foo_soc_term{
+   width: 100%;
+   padding-inline: 0rem;
+   padding-top: 2rem;
+   margin-top: 3rem;   
+   position: relative;
+   
+   display: flex;
+   justify-content: space-between;
+}
+
+.foo_soc_term::before{
+   content: '';
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 1px; /* or 0px if using only background */
+   border: none;
+   background-image: radial-gradient(circle, var(--grayM) 0.5px, transparent 0.5px);
+   background-size: 6px 1px; /* dot every 6px */
+   background-repeat: repeat-x;
+   background-position: center;
+}
+.term_box{
+   display: flex;
+   gap: 1.8rem;
+   font-size: 13px;
+   color: var(--foo-lg);
+}
+.term_box > p{
+   cursor: pointer;
+   font-family: var(--poppins);
+    z-index: 50;
+}
+.soc_box{
+   display: flex;
+   gap: 1.8rem;
+   font-size: 13px;
+   color: var(--grayM);
+   font-weight: 300;
+}
+.soc_box > a{
+  color: var(--grayM);
+  font-family: var(--poppins);
+  text-decoration: none;
+  z-index: 50;
+}
+.con{
+   font-weight: 500;
+   color: var(--foo-lg);
+   font-family: var(--poppins);
+   
+}
+
+@media screen and (max-width: 660px) {
+   .logo{
+      margin-left: .2rem;
+   }
+   .foo_body > p{
+      margin-inline: .5px;
+   }
+   .foo_soc_term{
+      flex-direction: column;
+      row-gap: 1rem;
+   }
+   .soc_box{
+      gap: .8rem;
+      flex-wrap: wrap;
+   }
+}
+@media screen and (max-width: 450px) {
+   /* .foo_body > p{
+      text-align: justify;
+   } */
+}
+
+
+
+
+
