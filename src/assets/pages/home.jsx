@@ -72,7 +72,7 @@ function Home(){
             <section ref={intro} className="main_content max-w-[1100px] pb-10 mx-auto z-10 relative overflow-hidden p-4">
                <img className={`${intr ? 'spr_' : ''} spiral-animation h-[30rem] select-none min-w-min absolute opacity-[var(--img-opa)] left-1/2 transform -translate-x-1/2`} src={spiral_img} alt="" />
                <div className="max-[650px]:mt-[13rem] w-full flex flex-col items-center relative z-30 mt-[12rem]">
-                  <h1 id="title_intro" className={`${intr ? 'intr_ opacity-100' : 'opacity-0'} max-[430px]:leading-[20vw] max-[430px]:text-[24.5vw] max-[650px]:my-[1.7rem] max-[650px]:leading-[18vw] max-[650px]:text-[23vw] relative h-fit w-fit text-center min-[1200px]:text-[7.7rem] text-[10.1vw] uppercase`}>
+                  <h1 id="title_intro" className={`${intr ? 'intr_ opacity-100' : 'opacity-0'} max-[430px]:leading-[20vw] max-[430px]:text-[24.9vw] max-[650px]:my-[1.7rem] max-[650px]:leading-[18vw] max-[650px]:text-[23vw] relative h-fit w-fit text-center min-[1200px]:text-[7.7rem] text-[10.1vw] uppercase`}>
                      Crafting Websites
                      <span className="max-[430px]:top-[-10.8vw] max-[430px]:left-[12vw] max-[650px]:top-[-10.5vw] max-[650px]:left-[13.4vw] absolute text-[13px] top-[2vw] min-[1200px]:top-[1.5rem] left-[3.4vw] min-[1200px]:left-[2.4rem]">2022  *  2025</span>
                   </h1>
@@ -137,7 +137,7 @@ function Home(){
                         {speed_i}
                      </div>
                      <div className="flex flex-col gap-3">
-                        <h1 className="service-title">Performance</h1>
+                        <h1 className="service-title leading-tight">Performance & Accessibility</h1>
                         <p className="stm-text max-w-[300px] text-justify">I focus on fast-loading, accessible websites that work smoothly across all devices and screen sizes.</p>
                      </div>
                   </div>
