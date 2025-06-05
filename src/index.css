@@ -58,11 +58,15 @@ img{
 }
 
 @utility stm-title {
-  @apply font-[var(--weight)] leading-7 text-2xl text-[var(--text-clr)];
+  @apply font-[var(--weight)] text-2xl text-[var(--text-clr)];
 }
 
 @utility stm-text {
   @apply text-sm text-[var(--grayM)] leading-6 font-light;
+}
+
+@utility service-title {
+  @apply text-[21px] mb-3 text-[var(--text-clr)] font-[var(--weight)] mb-2;
 }
 
 body{
@@ -227,7 +231,7 @@ body::after{
 
 }
 .spr_{
-  animation: showTop 1.5s ease forwards;
+  animation: showTop 1.3s ease forwards;
   animation-delay: 200ms;
 }
 @keyframes showTop{
@@ -340,9 +344,16 @@ body::after{
   left: 0;
   opacity: .5;
   bottom: 0;
+
   transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .line_::before{
   width: 100%;
 }
 
+
+.svb{
+  background-color: var(--bg-clr);
+  background-image: url('/noisy-texture.png');
+
+}

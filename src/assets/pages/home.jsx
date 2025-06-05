@@ -39,9 +39,18 @@ function Home(){
    // Intersection Method
    const { ref: intro, revealed: intr } = useReveal(0.3);
    const { ref: profile, revealed: pro } = useReveal(0.5);
-   const { ref: services, revealed: serv } = useReveal(0.1);
-  
+   const [sh, setSh] = useState(0.5);
+   useEffect(() => {
+      const handleResize = () => {
+         setSh(window.innerWidth <= 500 ? 0.2 : 0.5);
+      };
 
+      handleResize(); // Set once on load
+      window.addEventListener('resize', handleResize);
+
+      return () => window.removeEventListener('resize', handleResize);
+   }, []);
+   const { ref: services, revealed: serv } = useReveal(sh);
    
    const [buttonText, setButtonText] = useState('cruzdawn58@gmail.com');
    const gmail = 'cruzdawn58@gmail.com';
@@ -80,33 +89,59 @@ function Home(){
                </div>   
             </section>
 
-            <section className="about-me max-[650px]:gap-[3.5rem] max-w-[1350px] z-10 mt-[7rem] relative py-15 gap-[1rem] overflow-hidden mx-auto ">                                     
-               <div ref={profile} className={`${pro ? 'prf_' : ''} transition ease-in-out duration-[1.8s] relative max-[650px]:left-[-4rem] opacity-[0] rotate-[-30deg] max-[800px]:left-[-9rem] h-[20rem]`}>
+            <section className="about-me max-[650px]:gap-[3.5rem] max-w-[1350px] z-10 mt-[7rem] relative py-15 gap-[1rem]  mx-auto ">                                     
+               <div ref={profile} className={`${pro ? 'prf_' : ''} transition ease-in-out duration-[1.8s] relative max-[650px]:left-[-4rem] opacity-[0] rotate-[-20deg] max-[800px]:left-[-9rem] h-[20rem]`}>
                   <img src={me} className="absolute min-w-[9rem] left-[15rem] h-[9rem] top-[2rem] rounded-[20rem] z-10" alt="" />
                   <button onClick={handleCopy} id="myGmail" className="select-none left-[10rem] bg-[var(--text-clr)] z-10 absolute bottom-2 text-[var(--bg-clr)] poppins_font h-[1.9rem] w-[10.5rem] rounded-[20rem] cursor-pointer text-[11px] py-[3px]">{buttonText}</button>
                   <img src={lineSp} className="absolute select-none z-0 top-[-3rem]  rotate-[-120deg] left-[-3rem] min-w-[24rem] h-[24rem] opacity-[50%]" alt="" />
                </div>           
                <div className="z-20 max-w-[700px] max-[1233px]:ml-0 ml-[5rem] justify-self-center p-5 flex flex-col h-[100%]">
-                  <div className={`${pro ? 'txt_i' : ''} txt_ani_1 opacity-0 transition-all duration-[1s] ease-in-out delay-[200ms] flex w-[100%] mb-[1.85rem] items-center justify-between flex-wrap gap-3`}>
-                     <h1 className="stm-title">Welcome to my world</h1>
+                  <div className={`${pro ? 'txt_i' : ''} txt_ani_1 opacity-0 transition-all duration-[900ms] ease-in-out delay-[200ms] flex w-[100%] mb-[1.85rem] items-center justify-between flex-wrap gap-3`}>
+                     <h1 className="stm-title leading-7">Welcome to my world</h1>
                      <button className="bg-[var(--text-clr)] select-none text-[var(--bg-clr)] poppins_font h-[1.8rem] w-[6.8rem] rounded-[20rem] cursor-pointer text-[13px] py-[1px]">Snapshot</button>
                   </div>
-                  <p id='sd' className={`${pro ? 'txt_i' : ''} txt_ani_1 stm-text opacity-0 transition-all duration-[1s] ease-in-out delay-[400ms] mb-[1.9rem]`}>I’m a frontend developer with a sharp eye for clean, minimal UI. I love crafting intuitive user interfaces using HTML, CSS, JavaScript and React and I often lean into Tailwind CSS for fast and consistent styling.</p>
-                  <p className={`${pro ? 'txt_i' : ''} txt_ani_1 stm-text opacity-0 transition-all duration-[1s] ease-in-out delay-[600ms] mb-[1.75rem]`}>While frontend is where I started, I’m currently diving into backend development to become a more well-rounded developer. I’m learning PHP, laravel and exploring  SQL to better understand full-stack workflows.</p>
+                  <p id='sd' className={`${pro ? 'txt_i' : ''} txt_ani_1 stm-text opacity-0 transition-all duration-[900ms] ease-in-out delay-[400ms] mb-[1.9rem]`}>I’m a frontend developer with a sharp eye for clean, minimal UI. I love crafting intuitive user interfaces using HTML, CSS, JavaScript and React and I often lean into Tailwind CSS for fast and consistent styling.</p>
+                  <p className={`${pro ? 'txt_i' : ''} txt_ani_1 stm-text opacity-0 transition-all duration-[900ms] ease-in-out delay-[600ms] mb-[1.75rem]`}>While frontend is where I started, I’m currently diving into backend development to become a more well-rounded developer. I’m learning PHP, laravel and exploring  SQL to better understand full-stack workflows.</p>
                </div>
             </section>
 
-            <section ref={services} className="max-w-[1300px] max-[1100px]:px-5 px-15 relative pb-10 z-10 p-5 max-[650px]:mt-[5rem] mt-[10rem] mx-auto">
-               <div className="w-full max-[650px]:pr-5 mb-15">
-                  <p className={`${serv ? 'txt_i' : ''} txt_ani_2 text-[15px] uppercase text-[var(--grayM)] opacity-0 transition-all duration-[800ms] ease-in-out`}>What i do</p>
-                  <div className={`${serv ? 'txt_i' : ''} txt_ani_2 mt-1 opacity-0 transition-all duration-[800ms] ease-in-out delay-[200ms]`}>
-                     <h1 className={` stm-title`}>From Strategy to Execution</h1>
+            <section ref={services} className="max-w-[1300px] mb-[14rem] flex flex-col max-[450px]:items-start items-center max-[450px]:gap-[4rem] gap-[5rem] max-[1100px]:px-5 px-15 relative pb-10 z-10 p-5 mt-[6rem] mx-auto">
+               <div className="w-full max-[450px]:items-start flex flex-col items-center max-[650px]:pr-5 ">
+                  <p className={`${serv ? 'txt_i' : ''} txt_ani_3 text-[14px] uppercase text-[var(--grayM)] opacity-0 transition-all duration-[1s] ease-in-out`}>What i offer</p>
+                  <div className={`${serv ? 'txt_i' : ''} txt_ani_3 max-[450px]:text-start my-3 max-w-[550px] text-center mt-3 opacity-0 transition-all duration-[1s] ease-in-out delay-[200ms]`}>
+                     <h1 className={`stm-title leading-8`}>Delivering Scalable Frontend Solutions with Clean Design and Seamless User Experience</h1>
                   </div>
-                  <p className={`${serv ? 'txt_i' : ''} txt_ani_2 max-w-lg stm-text mt-3 opacity-0 transition-all duration-[800ms] ease-in-out delay-[400ms]`}>Whether you need a sleek portfolio, a landing page, or a full website — I’m here to turn your vision into a smooth, functional web experience.</p>
+                  {/* <p className={`${serv ? 'txt_i' : ''} txt_ani_2 text-center max-w-lg stm-text mt-3 opacity-0 transition-all duration-[800ms] ease-in-out delay-[400ms]`}>Whether you need a sleek portfolio, a landing page, or a full website — I’m here to turn your vision into a smooth, functional web experience.</p> */}
                </div>
 
-               <div className="">
-                  
+               <div className={`${serv ? 'txt_i' : ''} txt_ani_3 opacity-0 transition-all duration-[1s] ease-in-out delay-[800ms] grid max-[450px]:grid-cols-1 max-[750px]:grid-cols-2 grid-cols-3 md:gap-15 gap-y-17 gap-7`}>
+                  <div className="flex flex-col">
+                     <div className="mb-1">
+                        {pallet_i}
+                     </div>
+                     <div className="flex flex-col gap-3">
+                        <h1 className="service-title">UI Implementation</h1>
+                        <p className="stm-text max-w-[300px] text-justify">Whether it’s a Figma design or just a concept, I can turn visuals into fully functional web interfaces with clean, maintainable code.</p>
+                     </div>
+                  </div>
+                  <div className="flex flex-col">
+                     <div className="mb-[13px]">
+                        {code_slash_i}
+                     </div>
+                     <div className="flex flex-col gap-3">
+                        <h1 className="service-title">Code from Scratch</h1>
+                        <p className="stm-text max-w-[300px] text-justify">No templates, no shortcuts — I write code from the ground up to ensure your site is unique, efficient, and easy to scale.</p>
+                     </div> 
+                  </div>
+                  <div className="flex flex-col">
+                     <div className="mb-1">
+                        {speed_i}
+                     </div>
+                     <div className="flex flex-col gap-3">
+                        <h1 className="service-title">Performance</h1>
+                        <p className="stm-text max-w-[300px] text-justify">I focus on fast-loading, accessible websites that work smoothly across all devices and screen sizes.</p>
+                     </div>
+                  </div>
                </div>
             </section>
 
