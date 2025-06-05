@@ -111,7 +111,6 @@ function Home(){
                   <div className={`${serv ? 'txt_i' : ''} txt_ani_3 max-[450px]:text-start my-3 max-w-[550px] text-center mt-3 opacity-0 transition-all duration-[1s] ease-in-out delay-[200ms]`}>
                      <h1 className={`stm-title leading-8`}>Delivering Scalable Frontend Solutions with Clean Design and Seamless User Experience</h1>
                   </div>
-                  {/* <p className={`${serv ? 'txt_i' : ''} txt_ani_2 text-center max-w-lg stm-text mt-3 opacity-0 transition-all duration-[800ms] ease-in-out delay-[400ms]`}>Whether you need a sleek portfolio, a landing page, or a full website — I’m here to turn your vision into a smooth, functional web experience.</p> */}
                </div>
 
                <div className={`${serv ? 'txt_i' : ''} txt_ani_3 opacity-0 transition-all duration-[1s] ease-in-out delay-[800ms] grid max-[450px]:grid-cols-1 max-[750px]:grid-cols-2 grid-cols-3 md:gap-15 gap-y-17 gap-7`}>
