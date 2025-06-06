@@ -55,9 +55,9 @@ function Navigator({active}){
       <>
          <header className="w-full h-fit sticky top-[86%] px-2">
             <nav className="navig max-[650px]:w-fit max-w-[440px] h-[3.5rem] p-2 mx-auto border flex border-[var(--navigator-brd)] bg-[var(--navigator-bg)] gap-1 rounded-lg">
-               <Link id='home_link' className={`${isSmallScreen ? 'hide-links' : ''} max-[650px]:absolute link flex-center ${active == 'home' ? 'active' : 'hover:bg-[var(--darkM)]'}`} to='/'>Home</Link>
-               <Link id='project_link' className={`${isSmallScreen ? 'hide-links' : ''} max-[650px]:absolute link flex-center ${active == 'project' ? 'active' : 'hover:bg-[var(--darkM)]'}`} to='/project'>Projects</Link>
-               <Link id='about_link' className={`${isSmallScreen ? 'hide-links' : ''} max-[650px]:absolute link flex-center ${active == 'about' ? 'active' : 'hover:bg-[var(--darkM)]'}`} to='/about'>About</Link>
+               <Link to='/home' id='home_link' className={`${isSmallScreen ? 'hide-links' : ''} max-[650px]:absolute link flex-center ${active == 'home' ? 'active' : 'hover:bg-[var(--darkM)]'}`}>Home</Link>
+               <Link to='/project' id='project_link' className={`${isSmallScreen ? 'hide-links' : ''} max-[650px]:absolute link flex-center ${active == 'project' ? 'active' : 'hover:bg-[var(--darkM)]'}`}>Projects</Link>
+               <Link to='/about' id='about_link' className={`${isSmallScreen ? 'hide-links' : ''} max-[650px]:absolute link flex-center ${active == 'about' ? 'active' : 'hover:bg-[var(--darkM)]'}`}>About</Link>
                 {isSmallScreen ? menu : ''}
                <button onClick={switchTheme} className="max-[650px]:w-[3rem] cursor-pointer hover:opacity-[.8] w-[3.7rem] flex-center">
                   {switch_i}

@@ -87,6 +87,53 @@ body::after{
 }
 
 
+
+.bg-imgM{
+  background-color: var(--bg-clr);
+  background-image: url('/noisy-texture.png');
+
+}
+#loader-c{
+  animation: big 2s ease-in forwards;
+  animation-delay: 5.5s;
+}
+@keyframes big {
+  to{
+    transform: scale(100);
+  }
+}
+#loader-box{
+  animation: rot 5s ease forwards;
+  animation-delay: 500ms;
+}
+@keyframes rot {
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+#loader-body{
+  animation: close 1s ease forwards;
+  animation-delay: 7s;
+}
+#loader{
+  animation: close 1s ease forwards;
+  animation-delay: 7s;
+}
+.clsa{
+  animation: close 1s ease forwards;
+}
+@keyframes close {
+  to{
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
 @layer base {
   #logo_nav{
     font-family: var(--poppins);
@@ -231,7 +278,7 @@ body::after{
 
 }
 .spr_{
-  animation: showTop 1.3s ease forwards;
+  animation: showTop 1.5s ease forwards;
   animation-delay: 200ms;
 }
 @keyframes showTop{
@@ -304,6 +351,14 @@ body::after{
   }
 }
 
+.spr_an{
+  animation: showTop 1.8s ease forwards;
+  animation-delay: 8s;
+}
+.intr_an::before{
+  animation: slideUp 600ms cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards;
+  animation-delay: 9.5s !important;
+}
 
 
 

@@ -9,6 +9,7 @@ import me from '/zach1.jpg'
 
 import Lottie from "lottie-react";
 import global from "../components/global_loading.json"
+import Logo from "../components/logo.jsx";
 
 // Custom hook for intersection hook
 function useReveal(threshold = 0.5, once = true) {
@@ -25,7 +26,7 @@ function useReveal(threshold = 0.5, once = true) {
   return { ref, revealed };
 }
 
-function Home(){
+function AniHome(){
    const right_i = <svg xmlns="http://www.w3.org/2000/svg" className="mt-[.6px]" viewBox="0 0 16 16" width="20" height="20" fill="var(--bg-clr)"><path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/></svg>;   
    const code_slash_i = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="var(--grayM)"><path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z"></path></svg>;
    const pallet_i = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35" fill="var(--grayM)"><path d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 .5.5v5.277l4.147-4.131a.5.5 0 0 1 .707 0l3.535 3.536a.5.5 0 0 1 0 .708L10.261 10H15.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H3a3 3 0 0 1-2.121-.879A3 3 0 0 1 0 13.044m6-.21 7.328-7.3-2.829-2.828L6 7.188zM4.5 13a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0M15 15v-4H9.258l-4.015 4zM0 .5v12.495zm0 12.495V13z"/></svg>;
@@ -55,19 +56,46 @@ function Home(){
       }
    };
       
+   const loader = useRef(null)
+   useEffect(()=>{
+      // Disable scroll
+      document.body.style.overflow = 'hidden';
+      
+      const timer = setTimeout(()=>{
+         document.body.style.overflow = '';
+         if(loader.current){
+            loader.current.classList.add('hidden');
+         }
+      }, 8000);
+
+      return () => clearTimeout(timer); // Cleanup on unmount
+   }, [])
+
+
    return(
       <>
-         {/* <Lottie animationData={global}/> */}
+         
+         <div ref={loader} id='loader' className="bg-imgM fixed z-[100] flex-center h-[100vh] inset-0">
+            <div id="loader-body" className="max-[450px]:h-[15rem] max-[450px]:w-[15rem] w-[20rem] h-[20rem] relative border-1 border-[var(--grayM)] rounded-[20rem]">
+               <Lottie animationData={global}/>     
+               <div id='loader-box' className="absolute top-0 w-full h-full transition z-4 duration-[5s] rotate-[360deg]">
+                  <div id="loader-c" className="w-5 h-5 bg-[var(--text-clr)] absolute -top-2 max-[450px]:left-20 left-30 rounded-[3rem]"></div>   
+               </div>                                   
+               
+               <div className="w-6 h-6 bg-imgM border-1 border-[var(--grayM)] z-3 absolute top-[-10px] max-[450px]:left-[78px] left-[7.4rem] rounded-[3rem]"></div>
+            </div>
+         </div>
+
          <main id="home_content" className="w-full relative mb-5"> 
             <section ref={intro} className="main_content max-w-[1100px] pb-10 mx-auto z-10 relative overflow-hidden p-4">
-               <img className={`${intr ? 'spr_' : ''} spiral-animation h-[30rem] select-none min-w-min absolute opacity-[var(--img-opa)] left-1/2 transform -translate-x-1/2`} src={spiral_img} alt="" />
+               <img className={`${intr ? 'spr_an' : ''} spiral-animation h-[30rem] select-none min-w-min absolute opacity-[var(--img-opa)] left-1/2 transform -translate-x-1/2`} src={spiral_img} alt="" />
                <div className="max-[650px]:mt-[13rem] w-full flex flex-col items-center relative z-30 mt-[12rem]">
-                  <h1 id="title_intro" className={`${intr ? 'intr_ opacity-100' : 'opacity-0'} max-[430px]:leading-[20vw] max-[430px]:text-[24.9vw] max-[650px]:my-[1.7rem] max-[650px]:leading-[18vw] max-[650px]:text-[23vw] relative h-fit w-fit text-center min-[1200px]:text-[7.7rem] text-[10.1vw] uppercase`}>
+                  <h1 id="title_intro" className={`${intr ? 'intr_an opacity-100' : 'opacity-0'} max-[430px]:leading-[20vw] max-[430px]:text-[24.9vw] max-[650px]:my-[1.7rem] max-[650px]:leading-[18vw] max-[650px]:text-[23vw] relative h-fit w-fit text-center min-[1200px]:text-[7.7rem] text-[10.1vw] uppercase`}>
                      Crafting Websites
                      <span className="max-[430px]:top-[-10.8vw] max-[430px]:left-[12vw] max-[650px]:top-[-10.5vw] max-[650px]:left-[13.4vw] absolute text-[13px] top-[2vw] min-[1200px]:top-[1.5rem] left-[3.4vw] min-[1200px]:left-[2.4rem]">2022  *  2025</span>
                   </h1>
-                  <p id="title_label" className={`${intr ? 'intr_' : ''} max-[430px]:mx-[1.08rem] max-[650px]:mt-[1rem] max-[650px]:mx-[1.5rem] poppins_font relative max-w-[500px] text-[14px] text-center text-[var(--grayM)]`}><span className="wave select-none">👋</span> Hi, I’m Zach a creative frontend developer. I design and build clean, responsive, and user-friendly websites that bring ideas to life.</p>
-                  <div id="title_btns" className={`${intr ? 'intr_' : ''} relative flex gap-[1rem] mt-9`}>
+                  <p id="title_label" className={`${intr ? 'intr_an' : ''} max-[430px]:mx-[1.08rem] max-[650px]:mt-[1rem] max-[650px]:mx-[1.5rem] poppins_font relative max-w-[500px] text-[14px] text-center text-[var(--grayM)]`}><span className="wave select-none">👋</span> Hi, I’m Zach a creative frontend developer. I design and build clean, responsive, and user-friendly websites that bring ideas to life.</p>
+                  <div id="title_btns" className={`${intr ? 'intr_an' : ''} relative flex gap-[1rem] mt-9`}>
                      <button id="ss" className="poppins_font flex-center rounded-md cursor-pointer gap-3 px-[1rem] py-[.6rem] text-[13px] text-[var(--foo-lg)] bg-[var(--text-clr)]">
                         {right_i}
                         Go to projects
@@ -143,4 +171,4 @@ function Home(){
    )
 }
 
-export default Home
+export default AniHome
