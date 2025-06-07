@@ -62,7 +62,7 @@ function Navigator({active}){
                <button onClick={switchTheme} className="max-[650px]:w-[3rem] cursor-pointer hover:opacity-[.8] w-[3.7rem] flex-center">
                   {switch_i}
                </button>
-               <button onClick={()=>{ window.open('https://github.com/Cybeles-Eos', '_blank') }} className="flex select-none bg-[var(--semi-drk)] w-[9.7rem] hover:opacity-[.8] font-light cursor-pointer poppins_font text-[var(--whiteM)] text-[13px] rounded-[3px] flex-center gap-2">
+               <button id="github_link" onClick={()=>{ window.open('https://github.com/Cybeles-Eos', '_blank') }} className="flex select-none bg-[var(--semi-drk)] w-[9.7rem] hover:opacity-[.8] font-light cursor-pointer poppins_font text-[var(--whiteM)] text-[13px] rounded-[3px] flex-center gap-2">
                   Github Profile
                   {github_i}
                </button>

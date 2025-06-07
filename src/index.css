@@ -167,6 +167,10 @@ body::after{
   }
 }
 
+#home_link, #project_link, #about_link, #github_link{
+  font-family: var(--poppins), monospace !important;
+}
+
 @media screen and (max-width: 650px) {
   #home_link{
     top: -3rem;
