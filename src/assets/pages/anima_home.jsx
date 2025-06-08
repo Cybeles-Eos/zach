@@ -84,7 +84,7 @@ function AniHome(){
                
                <div className="w-6 h-6 bg-imgM border-1 border-[var(--grayM)] z-3 absolute top-[-10px] max-[450px]:left-[78px] left-[7.4rem] rounded-[3rem]"></div>
             </div>
-            <div className="absolute bottom-4 max-[640px]:px-6 px-10 w-full h-15 flex justify-between items-end">
+            <div className="absolute max-[450px]:bottom-8 bottom-4 max-[640px]:px-6 px-10 w-full h-15 flex justify-between items-end">
                <div className="flex flex-col ">
                   <p className="loader-t font-bold select-none text-[14px] text-[var(--grayM)]">©2025</p>
                   <p className="loader-t font-[var(--inter)] -mt-1 select-none text-[14px] text-[var(--text-clr)] uppercase">zach folio</p>
