@@ -66,7 +66,7 @@ function AniHome(){
          if(loader.current){
             loader.current.classList.add('hidden');
          }
-      }, 8000);
+      }, 8000);//8000
 
       return () => clearTimeout(timer); // Cleanup on unmount
    }, [])
@@ -83,6 +83,13 @@ function AniHome(){
                </div>                                   
                
                <div className="w-6 h-6 bg-imgM border-1 border-[var(--grayM)] z-3 absolute top-[-10px] max-[450px]:left-[78px] left-[7.4rem] rounded-[3rem]"></div>
+            </div>
+            <div className="absolute bottom-4 max-[640px]:px-6 px-10 w-full h-15 flex justify-between items-end">
+               <div className="flex flex-col ">
+                  <p className="loader-t font-bold select-none text-[14px] text-[var(--grayM)]">©2025</p>
+                  <p className="loader-t font-[var(--inter)] -mt-1 select-none text-[14px] text-[var(--text-clr)] uppercase">zach folio</p>
+               </div>
+               <p className="loader-t text-[var(--text-clr)] select-none text-[14px]">Loading...</p>
             </div>
          </div>
 
@@ -113,7 +120,7 @@ function AniHome(){
                   <button onClick={handleCopy} id="myGmail" className="select-none left-[10rem] bg-[var(--text-clr)] z-10 absolute bottom-2 text-[var(--bg-clr)] poppins_font h-[1.9rem] w-[10.5rem] rounded-[20rem] cursor-pointer text-[11px] py-[3px]">{buttonText}</button>
                   <img src={lineSp} className="absolute select-none z-0 top-[-3rem]  rotate-[-120deg] left-[-3rem] min-w-[24rem] h-[24rem] opacity-[50%]" alt="" />
                </div>           
-               <div className="z-20 max-w-[700px] max-[1233px]:ml-0 ml-[5rem] justify-self-center p-5 flex flex-col h-[100%]">
+               <div className="z-20 max-w-[700px] max-[1233px]:ml-0 ml-[5rem] justify-self-center p-5 px-7 flex flex-col h-[100%]">
                   <div className={`${pro ? 'txt_i' : ''} txt_ani_1 opacity-0 transition-all duration-[900ms] ease-in-out delay-[200ms] flex w-[100%] mb-[1.85rem] items-center justify-between flex-wrap gap-3`}>
                      <h1 className="stm-title leading-7">Welcome to my world</h1>
                      <button className="bg-[var(--text-clr)] select-none text-[var(--bg-clr)] poppins_font h-[1.8rem] w-[6.8rem] rounded-[20rem] cursor-pointer text-[13px] py-[1px]">Snapshot</button>
@@ -123,7 +130,7 @@ function AniHome(){
                </div>
             </section>
 
-            <section ref={services} className="max-w-[1300px] mb-[14rem] flex flex-col max-[450px]:items-start items-center max-[450px]:gap-[4rem] gap-[5rem] max-[1100px]:px-5 px-15 relative pb-10 z-10 p-5 mt-[6rem] mx-auto">
+            <section ref={services} className="max-w-[1300px] mb-[14rem] flex flex-col max-[450px]:items-start items-center max-[450px]:gap-[4rem] gap-[5rem] max-[1100px]:px-7 px-15 relative pb-10 z-10 p-5 mt-[6rem] mx-auto">
                <div className="w-full max-[450px]:items-start flex flex-col items-center max-[650px]:pr-5 ">
                   <p className={`${serv ? 'txt_i' : ''} txt_ani_3 text-[14px] uppercase text-[var(--grayM)] opacity-0 transition-all duration-[1s] ease-in-out`}>What i offer</p>
                   <div className={`${serv ? 'txt_i' : ''} txt_ani_3 max-[450px]:text-start my-3 max-w-[550px] text-center mt-3 opacity-0 transition-all duration-[1s] ease-in-out delay-[200ms]`}>

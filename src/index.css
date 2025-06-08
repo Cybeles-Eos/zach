@@ -128,9 +128,16 @@ body::after{
     opacity: 0;
   }
 }
-
-
-
+.loader-t{
+  animation: 800ms disappear ease forwards;
+  animation-delay: 5s;
+}
+@keyframes disappear{
+  to{
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
 
 
 
