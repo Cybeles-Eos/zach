@@ -119,6 +119,7 @@ body::after{
 #loader{
   animation: close 1s ease forwards;
   animation-delay: 7s;
+  position: relative;
 }
 .clsa{
   animation: close 1s ease forwards;
