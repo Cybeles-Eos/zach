@@ -84,12 +84,11 @@ function AniHome(){
                
                <div className="w-6 h-6 bg-imgM border-1 border-[var(--grayM)] z-3 absolute top-[-10px] max-[450px]:left-[78px] left-[7.4rem] rounded-[3rem]"></div>
             </div>
-            <div className="absolute bottom-4 max-[640px]:px-6 px-10 w-full h-15 flex justify-between items-end">
-               <div className="flex flex-col ">
-                  <p className="loader-t font-bold select-none text-[14px] text-[var(--grayM)]">©2025</p>
-                  <p className="loader-t font-[var(--inter)] -mt-1 select-none text-[14px] text-[var(--text-clr)] uppercase">zach folio</p>
+            <div className="absolute top-4 max-[640px]:px-4 px-5 w-full h-15">
+               <div className="flex flex-col">
+                  <p className="loader-t font-bold select-none text-[12px] text-[var(--grayM)]">©2025</p>
+                  <p className="loader-t font-[var(--inter)] font-semibold -mt-1 select-none text-[14px] text-[var(--text-clr)] uppercase">zach folio</p>
                </div>
-               <p className="loader-t text-[var(--text-clr)] select-none text-[14px]">Loading...</p>
             </div>
          </div>
 
@@ -117,7 +116,7 @@ function AniHome(){
             <section className="about-me max-[650px]:gap-[3.5rem] max-w-[1350px] z-10 mt-[7rem] relative py-15 gap-[1rem] max-[450px]:overflow-hidden  mx-auto ">                                     
                <div ref={profile} className={`${pro ? 'prf_' : ''} transition ease-in-out duration-[1.8s] relative max-[650px]:left-[-4rem] opacity-[0] rotate-[-20deg] max-[800px]:left-[-9rem] h-[20rem]`}>
                   <img src={me} className="absolute min-w-[9rem] left-[15rem] h-[9rem] top-[2rem] rounded-[20rem] z-10" alt="" />
-                  <button onClick={handleCopy} id="myGmail" className="select-none left-[10rem] bg-[var(--text-clr)] z-10 absolute bottom-2 text-[var(--bg-clr)] poppins_font h-[1.9rem] w-[10.5rem] rounded-[20rem] cursor-pointer text-[11px] py-[3px]">{buttonText}</button>
+                  <button onClick={handleCopy} id="myGmail" className="select-none hover:rotate-[-2deg] left-[10rem] bg-[var(--text-clr)] z-10 absolute bottom-2 text-[var(--bg-clr)] poppins_font h-[1.9rem] w-[10.5rem] rounded-[20rem] cursor-pointer text-[11px] py-[3px]">{buttonText}</button>
                   <img src={lineSp} className="absolute select-none z-0 top-[-3rem]  rotate-[-120deg] left-[-3rem] min-w-[24rem] h-[24rem] opacity-[50%]" alt="" />
                </div>           
                <div className="z-20 max-w-[700px] max-[1233px]:ml-0 ml-[5rem] justify-self-center p-5 px-7 flex flex-col h-[100%]">
