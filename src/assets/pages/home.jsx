@@ -145,7 +145,7 @@ function Home(){
                <div id="my-works" className="w-full mt-5">
                   <article className="">
                      <div className="w-full aspect-video rounded-[5px]">
-                       <img className="w-full h-full rounded-[5px] object-cover" src="zach/picha.png" alt="Laptop" />
+                       <img className="w-full h-full rounded-[5px] object-cover" src="/picha.png" alt="Laptop" />
                      </div>
                      <div className="mt-3">
                         <div class="flex justify-between items-center mb-2">
@@ -159,7 +159,7 @@ function Home(){
                   
                   <article className="">
                      <div className="w-full aspect-video rounded-[5px]">
-                       <img className="w-full h-full rounded-[5px] object-cover" src="zach/picha.png" alt="Laptop" />
+                       <img className="w-full h-full rounded-[5px] object-cover" src="/picha.png" alt="Laptop" />
                      </div>
                      <div className="mt-3">
                         <div class="flex justify-between items-center mb-2">
@@ -173,7 +173,7 @@ function Home(){
 
                   <article className="">
                      <div className="w-full aspect-video rounded-[5px]">
-                       <img className="w-full h-full rounded-[5px] object-cover" src="zach/picha.png" alt="Laptop" />
+                       <img className="w-full h-full rounded-[5px] object-cover" src="/picha.png" alt="Laptop" />
                      </div>
                      <div className="mt-3">
                         <div class="flex justify-between items-center mb-2">
@@ -187,7 +187,7 @@ function Home(){
                   
                   <article className="">
                      <div className="w-full aspect-video rounded-[5px]">
-                       <img className="w-full h-full rounded-[5px] object-cover" src="zach/picha.png" alt="Laptop" />
+                       <img className="w-full h-full rounded-[5px] object-cover" src="/picha.png" alt="Laptop" />
                      </div>
                      <div className="mt-3">
                         <div class="flex justify-between items-center mb-2">
