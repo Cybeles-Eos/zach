@@ -74,7 +74,6 @@ function AniHome(){
 
    return(
       <>
-         
          <div ref={loader} id='loader' className="bg-imgM fixed z-[100] flex-center h-[100vh] inset-0">
             <div id="loader-body" className="max-[450px]:h-[15rem] max-[450px]:w-[15rem] w-[20rem] h-[20rem] relative border-1 border-[var(--grayM)] rounded-[20rem]">
                <Lottie animationData={global}/>     
@@ -167,6 +166,74 @@ function AniHome(){
                   </div>
                </div>
             </section>
+
+            <section className="max-w-[1070px] mt-[10rem] mb-5 mx-auto px-[1.5rem] relative z-10">
+               <div className="w-full flex flex-col items-start ">
+                  <p className={` text-[14px] uppercase text-[var(--grayM)]`}>Projects</p>
+                  <div className={` max-[450px]:text-start mb-3 max-w-[550px] text-left mt-1`}>
+                     <h1 className={`stm-title leading-8 uppercase`}>My selected works i create</h1>
+                  </div>
+               </div>
+
+               <div id="my-works" className="w-full mt-5">
+                  <article className="">
+                     <div className="w-full aspect-video rounded-[5px]">
+                       <img className="w-full h-full rounded-[5px] object-cover" src="zach/picha.png" alt="Laptop" />
+                     </div>
+                     <div className="mt-3">
+                        <div class="flex justify-between items-center mb-2">
+                           <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - REACT</p>
+                           <button className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
+                        </div>
+                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">Noto</h3>
+                        <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
+                     </div>
+                  </article>
+                  
+                  <article className="">
+                     <div className="w-full aspect-video rounded-[5px]">
+                       <img className="w-full h-full rounded-[5px] object-cover" src="zach/picha.png" alt="Laptop" />
+                     </div>
+                     <div className="mt-3">
+                        <div class="flex justify-between items-center mb-2">
+                           <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - REACT</p>
+                           <button className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
+                        </div>
+                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">Noto</h3>
+                        <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
+                     </div>
+                  </article>
+
+                  <article className="">
+                     <div className="w-full aspect-video rounded-[5px]">
+                       <img className="w-full h-full rounded-[5px] object-cover" src="zach/picha.png" alt="Laptop" />
+                     </div>
+                     <div className="mt-3">
+                        <div class="flex justify-between items-center mb-2">
+                           <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - REACT</p>
+                           <button className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
+                        </div>
+                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">Noto</h3>
+                        <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
+                     </div>
+                  </article>
+                  
+                  <article className="">
+                     <div className="w-full aspect-video rounded-[5px]">
+                       <img className="w-full h-full rounded-[5px] object-cover" src="zach/picha.png" alt="Laptop" />
+                     </div>
+                     <div className="mt-3">
+                        <div class="flex justify-between items-center mb-2">
+                           <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - REACT</p>
+                           <button className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
+                        </div>
+                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">Noto</h3>
+                        <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
+                     </div>
+                  </article>
+               </div>
+            </section>
+
 
             <div className="sticky max-[990px]:w-full w-fit max-[990px]:left-auto left-[50%] max-[990px]:translate-x-0 transform translate-x-[-50%] z-20 bottom-5">
                <Navigator active="home"/>

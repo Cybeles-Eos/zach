@@ -85,6 +85,9 @@ body::after{
 .navig{
   background-image: url('/noisy-texture.png');
 }
+p{
+  font-size: 14px;
+}
 
 
 
@@ -423,4 +426,13 @@ body::after{
   background-color: var(--bg-clr);
   background-image: url('/noisy-texture.png');
 
+}
+
+
+
+#my-works{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  row-gap: 4.5rem;
 }
