@@ -11,11 +11,12 @@ import Lottie from "lottie-react";
 import global from "../components/global_loading.json"
 
 // Custom hook for intersection hook
-function useReveal(threshold = 0.5, once = true) {
+function useReveal(threshold = 0.5, once = true, rm = '0px') {
    const [revealed, setRevealed] = useState(false);
    const { ref, inView } = useInView({
       threshold,
       triggerOnce: once,
+      rootMargin: rm
    });
 
    useEffect(() => {
@@ -39,8 +40,12 @@ function Home(){
    // Intersection Method
    const { ref: intro, revealed: intr } = useReveal(0.3);
    const { ref: profile, revealed: pro } = useReveal(0.5);
-   const { ref: services, revealed: serv } = useReveal(0.3);
-   
+   const { ref: services, revealed: serv } = useReveal(0.4);
+   const { ref: works, revealed: work } = useReveal(1, true, '-80px');
+   const { ref: works1, revealed: work1 } = useReveal(0.8);
+   const { ref: works2, revealed: work2, } = useReveal(0.8);
+   const { ref: whymeCon, revealed: whyme, } = useReveal(0.9);
+
    const [buttonText, setButtonText] = useState('cruzdawn58@gmail.com');
    const gmail = 'cruzdawn58@gmail.com';
    const handleCopy = async () => {
@@ -95,7 +100,7 @@ function Home(){
                </div>
             </section>
 
-            <section ref={services} className="max-w-[1300px] mb-[5rem] flex flex-col max-[450px]:items-start items-center max-[450px]:gap-[4rem] gap-[5rem] max-[1100px]:px-7 px-15 relative pb-10 z-10 p-5 mt-[6rem] mx-auto">
+            <section ref={services} className="max-w-[1300px] max-[650px]:mb-[2rem] mb-[5rem] flex flex-col max-[450px]:items-start items-center max-[450px]:gap-[4rem] gap-[5rem] max-[1100px]:px-7 px-15 relative pb-10 z-10 p-5 mt-[6rem] mx-auto">
                <div className="w-full max-[450px]:items-start flex flex-col items-center max-[650px]:pr-5 ">
                   <p className={`${serv ? 'txt_i' : ''} txt_ani_3 text-[14px] uppercase text-[var(--grayM)] opacity-0 transition-all duration-[1s] ease-in-out`}>What i offer</p>
                   <div className={`${serv ? 'txt_i' : ''} txt_ani_3 max-[450px]:text-start my-3 max-w-[550px] text-center mt-3 opacity-0 transition-all duration-[1s] ease-in-out delay-[200ms]`}>
@@ -134,20 +139,20 @@ function Home(){
                </div>
             </section>
 
-            <section className="max-w-[1070px] mt-[10rem] mb-5 mx-auto px-[1.5rem] relative z-10">
-               <div className="w-full flex flex-col items-start ">
-                  <p className={` text-[14px] uppercase text-[var(--grayM)]`}>Projects</p>
-                  <div className={` max-[450px]:text-start mb-3 max-w-[550px] text-left mt-1`}>
+            <section className="max-w-[1070px] max-[650px]:mt-[5rem] mt-[10rem] mb-5 mx-auto px-[1.5rem] relative z-10">
+               <div ref={works} className="w-full flex flex-col items-start ">
+                  <p className={`${work ? 'txt_i' : ''} txt_ani_3 animate-style text-[14px] uppercase text-[var(--grayM)]`}>Projects</p>
+                  <div className={`${work ? 'txt_i' : ''} txt_ani_3 max-[450px]:text-start mb-3 max-w-[550px] text-left mt-1 animate-style`}>
                      <h1 className={`stm-title leading-8 uppercase`}>My selected works i create</h1>
                   </div>
                </div>
 
                <div id="my-works" className="w-full mt-5">
-                  <article className="">
-                     <div className="w-full aspect-video rounded-[5px]">
-                       <img className="w-full h-full rounded-[5px] object-cover" src="/picha.png" alt="Laptop" />
+                  <article ref={works1} className="">
+                     <div className="w-full relative aspect-video rounded-[5px] ">
+                       <img className={`${work1 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover`} src="zach/picha.png" alt="Laptop" />
                      </div>
-                     <div className="mt-3">
+                     <div className={`${work1 ? 'txt_i' : ''} delay-600 txt_ani_3 animate-style mt-3`}>
                         <div class="flex justify-between items-center mb-2">
                            <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - REACT</p>
                            <button className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
@@ -159,9 +164,9 @@ function Home(){
                   
                   <article className="">
                      <div className="w-full aspect-video rounded-[5px]">
-                       <img className="w-full h-full rounded-[5px] object-cover" src="/picha.png" alt="Laptop" />
+                       <img className={`${work1 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover`} src="zach/picha.png" alt="Laptop" />
                      </div>
-                     <div className="mt-3">
+                     <div className={`${work1 ? 'txt_i' : ''} delay-600 txt_ani_3 animate-style mt-3`}>
                         <div class="flex justify-between items-center mb-2">
                            <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - REACT</p>
                            <button className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
@@ -171,11 +176,11 @@ function Home(){
                      </div>
                   </article>
 
-                  <article className="">
+                  <article ref={works2} className="">
                      <div className="w-full aspect-video rounded-[5px]">
-                       <img className="w-full h-full rounded-[5px] object-cover" src="/picha.png" alt="Laptop" />
+                       <img className={`${work2 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover`} src="zach/picha.png" alt="Laptop" />
                      </div>
-                     <div className="mt-3">
+                     <div className={`${work2 ? 'txt_i' : ''} delay-600 txt_ani_3 animate-style mt-3`}>
                         <div class="flex justify-between items-center mb-2">
                            <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - REACT</p>
                            <button className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
@@ -187,9 +192,9 @@ function Home(){
                   
                   <article className="">
                      <div className="w-full aspect-video rounded-[5px]">
-                       <img className="w-full h-full rounded-[5px] object-cover" src="/picha.png" alt="Laptop" />
+                       <img className={`${work2 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover`} src="zach/picha.png" alt="Laptop" />
                      </div>
-                     <div className="mt-3">
+                     <div className={`${work2 ? 'txt_i' : ''} delay-600 txt_ani_3 animate-style mt-3`}>
                         <div class="flex justify-between items-center mb-2">
                            <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - REACT</p>
                            <button className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
@@ -201,6 +206,9 @@ function Home(){
                </div>
             </section>
 
+            <section ref={whymeCon} className="max-w-[1070px] mx-auto px-[1.5rem] my-40 mt-50">
+               <h1 id="whyme" className={`${whyme ? 'showme' : ''} max-[450px]:indent-[4.7rem] indent-[6rem] text-[var(--text-clr)] max-[450px]:text-[25px] max-[650px]:text-[30px] text-[37px] relative max-[450px]:leading-[39px] leading-[49px]`}><span className="absolute max-[450px]:text-[13px] max-[450px]:-left-17 -left-23 max-[450px]:top-1 top-2 uppercase text-[var(--grayM)] text-[15px]">why me</span>I work closely with my clients as partners to handle different marketing needs. From ideas to execution, I manage everything in one place. I don’t believe in average work—I always aim for better. This helps me deliver strong, lasting results.</h1>
+            </section>
 
             <div className="sticky max-[990px]:w-full w-fit max-[990px]:left-auto left-[50%] max-[990px]:translate-x-0 transform translate-x-[-50%] z-20 bottom-5">
                <Navigator active="home"/>

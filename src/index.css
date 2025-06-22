@@ -69,6 +69,10 @@ img{
   @apply text-[21px] mb-3 text-[var(--text-clr)] font-[var(--weight)] mb-2;
 }
 
+@utility animate-style{
+  @apply opacity-0 transition-all duration-1000 ease-in-out;
+}
+
 body{
   background-color: var(--bg-clr);
   position: relative;
@@ -436,3 +440,30 @@ p{
   gap: 1.5rem;
   row-gap: 4.5rem;
 }
+@media screen and (max-width: 650px) {
+  #my-works{
+    grid-template-columns: 1fr;
+    row-gap: 2.6rem;
+  }
+}
+
+
+.cubz{
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+@utility work-box-animate {
+  @apply transition-all duration-1000;
+}
+
+
+#whyme{
+  transition: all 1s;
+  transform: scale(.95) translateY(-1rem);
+  opacity: 0;  
+}
+.showme{
+  opacity: 1 !important;
+  transform: scale(1) translateY(0rem) !important;
+}
+
+
