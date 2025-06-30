@@ -350,8 +350,9 @@ p{
   content: '';
   position: absolute;
   inset: 0;
+  top: -2px;
   left: -1.5px;
-  height: 102%;
+  height: 105%;
   width: 102%;
   background-color: var(--bg-clr);
   background-image: url('/noisy-texture.png');
@@ -443,6 +444,30 @@ p{
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   row-gap: 4.5rem;
+}
+
+.img--works1,.img--works2,.img--works3,.img--works4,
+.img--works5, .img--works6{  
+  cursor: zoom-in;
+}
+.img--works1:active {
+  transform: translateY(13rem) translateX(-6.5rem) scale(4);
+}
+.img--works2:active {
+  transform: translateY(1rem) scale(3);
+}
+
+.img--works3:active {
+  transform: translateY(2.5rem) scale(3.6);
+}
+.img--works4:active{
+  transform: translateY(3.5rem) translateX(5rem) scale(3);
+}
+.img--works5:active {
+  transform: translateY(5rem) scale(2);
+}
+.img--works6:active{
+  transform: translateY(-2rem) translateX(0rem) scale(1.5);
 }
 @media screen and (max-width: 650px) {
   #my-works{
@@ -564,3 +589,37 @@ p{
 
 
 
+
+
+
+
+#about--page-title,#about--page-label{
+  animation: showAbout 1.3s ease forwards;
+  opacity: 0;
+}
+#about--page-title{
+  animation-delay: 200ms;
+}
+
+@keyframes showAbout {
+  from{
+    transform: translateY(2rem) translateZ(-2rem);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0rem) translateZ(0rem);
+    opacity: 1;
+  }
+}
+
+
+
+#liteshuttle{
+  transform: translateY(-2rem);
+  opacity: 0;
+  transition: all 1s ease;
+}
+.lsshow{
+  opacity: 1 !important;
+    transform: translateY(0rem) !important;
+}

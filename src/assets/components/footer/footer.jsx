@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import style from './footer.module.css'
 
 function Footer(){
@@ -6,7 +7,7 @@ function Footer(){
       <>
          <footer className={style.foo}>
             <section className={style.foo_body}>
-               <h1 className={`${style.logo}`}><span>{codepen}</span>zach</h1>
+               <Link to='/home' className={`${style.logo}`}><span>{codepen}</span>zach</Link>
                <p>© 2025 zach. All rights reserved. Built with HTML, Tailwind CSS, JavaScript, and React + Vite. Need a website or frontend help? Email me at — dawnzach10@gmail.com.</p>
                <div className={style.foo_soc_term}>
                   <div className={style.term_box}>

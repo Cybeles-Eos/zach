@@ -6,8 +6,13 @@ import { useInView } from "react-intersection-observer";
 import spiral_img from '/done.png'
 import lineSp from '/rolls.png'
 import me from '/zach1.jpg'
+import resume from '/zachcv.pdf'
 
-import workImg from '/picha.png'
+import notoLP from '/noto.png'
+import myfontLP from '/myfont.png'
+import jobsfieldLP from '/jobsfield.png'
+import cookgoodLP from '/cookgood.png'
+
 import takuya from '/takuya.jpg'
 import antonette from '/antonette.jpg'
 
@@ -123,7 +128,7 @@ function AniHome(){
                         {right_i}
                         Go to projects
                      </button>
-                     <button className="poppins_font flex-center rounded-md cursor-pointer px-[1.4rem] py-[.6rem] text-[13px] text-[var(--text-clr)] border border-[var(--text-clr)]">
+                     <button onClick={()=>{ window.open(resume, '_blank') }} className="poppins_font flex-center rounded-md cursor-pointer px-[1.4rem] py-[.6rem] text-[13px] text-[var(--text-clr)] border border-[var(--text-clr)]">
                         Resume
                      </button>
                   </div>
@@ -195,55 +200,55 @@ function AniHome(){
 
                <div id="my-works" className="w-full mt-5">
                   <article ref={works1} className="">
-                     <div className="w-full relative aspect-video rounded-[5px] ">
-                       <img className={`${work1 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover`} src={workImg} alt="Laptop" />
+                     <div className="w-full relative aspect-video rounded-[5px] overflow-hidden ">
+                       <img className={`${work1 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover img--works1`} src={jobsfieldLP} alt="Laptop" />
                      </div>
                      <div className={`${work1 ? 'txt_i' : ''} delay-600 txt_ani_3 animate-style mt-3`}>
-                        <div class="flex justify-between items-center mb-2">
+                        <div className="flex justify-between items-center mb-2">
                            <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - REACT</p>
-                           <button className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
+                           <button onClick={()=>{ window.open('https://cybeles-eos.github.io/JobsField', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
-                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">Noto</h3>
+                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">JobsField</h3>
                         <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
                      </div>
                   </article>
                   
                   <article className="">
-                     <div className="w-full aspect-video rounded-[5px]">
-                       <img className={`${work1 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover`} src={workImg} alt="Laptop" />
+                     <div className="w-full aspect-video rounded-[5px] overflow-hidden">
+                       <img className={`${work1 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover img--works2`} src={cookgoodLP} alt="Laptop" />
                      </div>
                      <div className={`${work1 ? 'txt_i' : ''} delay-600 txt_ani_3 animate-style mt-3`}>
-                        <div class="flex justify-between items-center mb-2">
+                        <div className="flex justify-between items-center mb-2">
                            <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - REACT</p>
-                           <button className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
+                           <button onClick={()=>{ window.open('https://cybeles-eos.github.io/Cook-Good', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
-                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">Noto</h3>
+                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">CookGood</h3>
                         <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
                      </div>
                   </article>
 
                   <article ref={works2} className="">
-                     <div className="w-full aspect-video rounded-[5px]">
-                       <img className={`${work2 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover`} src={workImg} alt="Laptop" />
+                     <div className="w-full aspect-video rounded-[5px] overflow-hidden">
+                       <img className={`${work2 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover img--works3`} src={myfontLP} alt="Laptop" />
                      </div>
                      <div className={`${work2 ? 'txt_i' : ''} delay-600 txt_ani_3 animate-style mt-3`}>
-                        <div class="flex justify-between items-center mb-2">
+                        <div className="flex justify-between items-center mb-2">
                            <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - REACT</p>
-                           <button className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
+                           <button onClick={()=>{ window.open('https://cybeles-eos.github.io/MyFont', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
-                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">Noto</h3>
+                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">MyFont</h3>
                         <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
                      </div>
                   </article>
                   
                   <article className="">
-                     <div className="w-full aspect-video rounded-[5px]">
-                       <img className={`${work2 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover`} src={workImg} alt="Laptop" />
+                     <div className="w-full aspect-video rounded-[5px] overflow-hidden">
+                       <img className={`${work2 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover img--works4`} src={notoLP} alt="Laptop" />
                      </div>
                      <div className={`${work2 ? 'txt_i' : ''} delay-600 txt_ani_3 animate-style mt-3`}>
-                        <div class="flex justify-between items-center mb-2">
+                        <div className="flex justify-between items-center mb-2">
                            <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - REACT</p>
-                           <button className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
+                           <button onClick={()=>{ window.open('https://cybeles-eos.github.io/Noto', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
                         <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">Noto</h3>
                         <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
