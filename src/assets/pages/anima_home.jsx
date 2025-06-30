@@ -7,6 +7,11 @@ import spiral_img from '/done.png'
 import lineSp from '/rolls.png'
 import me from '/zach1.jpg'
 
+import workImg from '/picha.png'
+import takuya from '/takuya.jpg'
+import antonette from '/antonette.jpg'
+
+import lightMp4 from '/light.mp4'
 import Lottie from "lottie-react";
 import global from "../components/global_loading.json"
 import Logo from "../components/logo.jsx";
@@ -46,6 +51,14 @@ function AniHome(){
    const { ref: works1, revealed: work1 } = useReveal(0.8);
    const { ref: works2, revealed: work2, } = useReveal(0.8);
    const { ref: whymeCon, revealed: whyme, } = useReveal(0.9);
+
+   const offset = window.innerWidth <= 600 ? '0px' : '-100px';
+   const offset2 = window.innerWidth <= 600 ? '0px' : '-220px';  
+   const { ref: testimon0, revealed: test0 } = useReveal(0.9, true, offset);
+   const { ref: testimon1, revealed: test1 } = useReveal(0.9, true, offset);
+   const { ref: testimon2, revealed: test2 } = useReveal(0.9, true, offset2);
+   const { ref: testimon3, revealed: test3 } = useReveal(0.9, true, offset);
+   const { ref: testimon4, revealed: test4 } = useReveal(0.9, true, offset);
 
    const [buttonText, setButtonText] = useState('cruzdawn58@gmail.com');
    const gmail = 'cruzdawn58@gmail.com';
@@ -183,7 +196,7 @@ function AniHome(){
                <div id="my-works" className="w-full mt-5">
                   <article ref={works1} className="">
                      <div className="w-full relative aspect-video rounded-[5px] ">
-                       <img className={`${work1 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover`} src="zach/picha.png" alt="Laptop" />
+                       <img className={`${work1 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover`} src={workImg} alt="Laptop" />
                      </div>
                      <div className={`${work1 ? 'txt_i' : ''} delay-600 txt_ani_3 animate-style mt-3`}>
                         <div class="flex justify-between items-center mb-2">
@@ -197,7 +210,7 @@ function AniHome(){
                   
                   <article className="">
                      <div className="w-full aspect-video rounded-[5px]">
-                       <img className={`${work1 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover`} src="zach/picha.png" alt="Laptop" />
+                       <img className={`${work1 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover`} src={workImg} alt="Laptop" />
                      </div>
                      <div className={`${work1 ? 'txt_i' : ''} delay-600 txt_ani_3 animate-style mt-3`}>
                         <div class="flex justify-between items-center mb-2">
@@ -211,7 +224,7 @@ function AniHome(){
 
                   <article ref={works2} className="">
                      <div className="w-full aspect-video rounded-[5px]">
-                       <img className={`${work2 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover`} src="zach/picha.png" alt="Laptop" />
+                       <img className={`${work2 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover`} src={workImg} alt="Laptop" />
                      </div>
                      <div className={`${work2 ? 'txt_i' : ''} delay-600 txt_ani_3 animate-style mt-3`}>
                         <div class="flex justify-between items-center mb-2">
@@ -225,7 +238,7 @@ function AniHome(){
                   
                   <article className="">
                      <div className="w-full aspect-video rounded-[5px]">
-                       <img className={`${work2 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover`} src="zach/picha.png" alt="Laptop" />
+                       <img className={`${work2 ? 'w-full' : 'w-0'} work-box-animate cubz h-full rounded-[5px] object-cover`} src={workImg} alt="Laptop" />
                      </div>
                      <div className={`${work2 ? 'txt_i' : ''} delay-600 txt_ani_3 animate-style mt-3`}>
                         <div class="flex justify-between items-center mb-2">
@@ -239,8 +252,86 @@ function AniHome(){
                </div>
             </section>
 
-            <section ref={whymeCon} className="max-w-[1070px] mx-auto px-[1.5rem] max-[650px]:my-30 my-40 mt-45 max-[650px]:mt-35">
-               <h1 id="whyme" className={`${whyme ? 'showme' : ''} max-[450px]:indent-[4.7rem] indent-[6rem] text-[var(--text-clr)] max-[450px]:text-[25px] max-[650px]:text-[30px] text-[37px] relative max-[450px]:leading-[39px] leading-[49px]`}><span className="absolute max-[450px]:text-[13px] max-[450px]:-left-17 -left-23 max-[450px]:top-1 top-2 uppercase text-[var(--grayM)] text-[15px]">why me</span>I work closely with my clients as partners to handle different marketing needs. From ideas to execution, I manage everything in one place. I don’t believe in average work—I always aim for better. This helps me deliver strong, lasting results.</h1>
+            <section ref={whymeCon} className="max-w-[1070px] mx-auto px-[1.5rem] my-60">
+               <h1 id="whyme" className={`${whyme ? 'showme' : ''} max-[450px]:indent-[4.7rem] indent-[6rem] text-[var(--text-clr)] max-[450px]:text-[25px] max-[650px]:text-[30px] text-[35px] relative max-[450px]:leading-[39px] leading-[49px]`}><span className="absolute max-[450px]:text-[13px] max-[450px]:-left-17 -left-23 max-[450px]:top-1 top-2 uppercase text-[var(--grayM)] text-[15px]">why me</span>I work closely with my clients as partners to handle different marketing needs. From ideas to execution, I manage everything in one place. I don’t believe in average work—I always aim for better. This helps me deliver strong, lasting results.</h1>
+            </section>
+
+            <section className="max-w-[1070px] text-[var(--text-clr)] flex flex-col items-center mb-30 px-5 mx-auto">
+               <div ref={testimon0} id="test-title-con" className={`${test0 ? 'testimonial_show' : ''}`}>
+                  <h1 id="testimonial-title">DON’T JUST TAKE MY WORD FOR IT</h1>
+               </div>
+               <div ref={testimon1} id="testimonial-labels" className={`${test1 ? 'testimonial_show' : ''} max-w-[700px] mt-8 mx-13 flex gap-13 justify-center`}>
+                     <h2 className="text-[1.25rem] font-[500]">TESTIMONIALS</h2>
+                     <p className="max-w-[470px] text-[var(--grayM)] z-10">Here’s what clients say about working with me. Their satisfaction is my top priority, and I’m committed to making every project a great experience.</p>
+               </div>
+               <hr ref={testimon2} className={`${test2 ? 'w-full' : ''} w-0 duration-1000 ease border-t mx-10 my-10 border-t-[var(--grayM)] bg-transparent`} />
+
+               <div className="py-5">
+                  <div ref={testimon3} className={`${test3 ? 'testimonial_show' : ''} testimonial-box max-w-[700px] mt-3 mx-13 flex gap-13`}> 
+                     <div className="ml-4">
+                        <img src={takuya} className="min-w-[9rem] h-[9rem] rounded-[30rem]" alt="" />
+                     </div>
+                     <div className="z-10">
+                        <h1 className="mt-5 text-[1.4rem] font-[500]">Takuya Kenneth</h1>
+                        <p className="text-[var(--grayM)] mt-2">Working with you was a great experience! You built the Coock Good app exactly how I envisioned it clean, easy to use, and perfect for showcasing Filipino recipes.</p>
+                     </div>
+                  </div>
+
+                  <div ref={testimon4} className={`${test4 ? 'testimonial_show' : ''} testimonial-box max-w-[700px] mt-20 mx-13 flex gap-13`}> 
+                     <div className="ml-5 z-10">
+                        <h1 className="mt-4 text-[1.4rem] font-[500]">Antonette Baylon</h1>
+                        <p className="text-[var(--grayM)] mt-2">Super satisfied with the job listing site you created for me. Everything works smoothly, and I love how users can easily view all job details. Thank you!</p>
+                     </div>
+                     <div >
+                        <img src={antonette} className="min-w-[9rem] h-[9rem] rounded-[30rem]" alt="" />
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section className="max-w-[1100px] rounded-xl h-[30rem] px-4 overflow-hidden mb-6 mx-auto">
+               <div className="relative bg-[var(--darkM)] rounded-xl overflow-hidden  max-w-full h-full pt-13  text-[var(--whiteM)]">
+          
+                  <video autoPlay muted loop playsInline className="absolute top-0 left-0 w-full h-full object-cover object-[center_80%] z-0">
+                     <source src={lightMp4} type="video/mp4" />
+                  </video>
+
+                  <div className="relative z-10 flex flex-col h-full w-full text-center">
+                     
+                     <h2 className="uppercase leading-[19px] font-[200] text-[1rem] mb-10 mx-auto max-w-[250px] poppins_font">
+                        Your design is a masterpiece waiting to become alive.
+                     </h2>
+
+                     <h2 id="footer_title" className="text-[4.5rem] uppercase mx-auto mt-11 max-w-[400px] leading-[65px]">
+                        Lets Make It Happen
+                     </h2>
+
+                     <div id="work_global" className="w-53 h-16 overflow-hidden flex absolute bottom-6 border border-[var(--grayM)] rounded-sm left-6 ">
+                        <div className="min-w-17 h-full border-r border-r-[var(--grayM)] relative">
+                           <div className=" absolute top-[-2px]"><Lottie animationData={global}/></div>
+                        </div>
+                        <div className="text-[var(--whiteM)] w-full h-full">
+                           <div className="w-full h-[50%] pl-2 uppercase border-b border-b-[var(--grayM)] flex items-center">
+                              <p style={{fontSize: "11px"}}>Working Globally</p>
+                           </div>
+                           <div className="w-full h-[50%] font-[200] pl-2 uppercase flex items-center">
+                              <p style={{fontSize: "11px"}}>Available <span className="w-[5px] h-[5px] mb-[2px] rounded-xl ml-1 inline-block bg-[#00FF11]"></span></p>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div id="work_inquir" className=" overflow-hidden flex flex-col absolute bottom-6 rounded-sm right-6 ">
+                           <div className="w-full uppercase flex items-center">
+                              <p style={{fontSize: "14px"}}>FOR FURTHER INQUIRIES</p>
+                           </div>
+                           <div className="w-full text-[var(--grayM)] flex items-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" className="mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M4.99989 13.9999L4.99976 5L6.99976 4.99997L6.99986 11.9999L17.1717 12L13.222 8.05024L14.6362 6.63603L21.0001 13L14.6362 19.364L13.222 17.9497L17.1717 14L4.99989 13.9999Z"></path></svg>
+                              <p style={{fontSize: "12px"}}>dawnzach10@gmail.com</p>
+                           </div>
+                     </div>
+                  </div>
+               </div>
             </section>
 
             <div className="sticky max-[990px]:w-full w-fit max-[990px]:left-auto left-[50%] max-[990px]:translate-x-0 transform translate-x-[-50%] z-20 bottom-5">
