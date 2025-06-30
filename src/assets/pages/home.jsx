@@ -181,7 +181,7 @@ function Home(){
                            <button onClick={()=>{ window.open('https://cybeles-eos.github.io/JobsField', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
                         <h3 className="text-[20px] font-[300] poppins_font  text-[var(--text-clr)]">JobsField</h3>
-                        <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
+                        <p className="text-[var(--grayM)] max-w-[450px] mt-1">A job listing and application portal built for aspiring professionals. Users can browse opportunities, filter by category, and submit applications with resume uploads.</p>
                      </div>
                   </article>
                   
@@ -195,7 +195,7 @@ function Home(){
                            <button onClick={()=>{ window.open('https://cybeles-eos.github.io/Cook-Good', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
                         <h3 className="text-[20px] font-[300] poppins_font  text-[var(--text-clr)]">CookGood</h3>
-                        <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
+                        <p className="text-[var(--grayM)] max-w-[450px] mt-1">A recipe discovery app where users can browse, save, and share cooking ideas. It features step-by-step guides, ingredient filters, and a favorites list for quick access.</p>
                      </div>
                   </article>
 
@@ -209,7 +209,7 @@ function Home(){
                            <button onClick={()=>{ window.open('https://cybeles-eos.github.io/MyFont', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
                         <h3 className="text-[20px] font-[300] poppins_font  text-[var(--text-clr)]">MyFont</h3>
-                        <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
+                        <p className="text-[var(--grayM)] max-w-[450px] mt-1">A font preview and customization tool that allows users to explore, style, and download popular fonts. It supports dark mode, live editing, and responsive design for a smooth typography experience.</p>
                      </div>
                   </article>
                   
@@ -223,7 +223,7 @@ function Home(){
                            <button onClick={()=>{ window.open('https://cybeles-eos.github.io/Noto', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
                         <h3 className="text-[20px] font-[300] poppins_font  text-[var(--text-clr)]">Noto</h3>
-                        <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
+                        <p className="text-[var(--grayM)] max-w-[450px] mt-1">A modern note-taking app focused on speed and simplicity. Users can create, edit, and organize notes and to-do lists with a clean UI and local storage support.</p>
                      </div>
                   </article>
                </div>
