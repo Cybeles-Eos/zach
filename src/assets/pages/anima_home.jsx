@@ -1,6 +1,6 @@
 import Footer from "../components/footer/footer.jsx"
 import Navigator from "../components/navigator.jsx"
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import spiral_img from '/done.png'
@@ -124,10 +124,10 @@ function AniHome(){
                   </h1>
                   <p id="title_label" className={`${intr ? 'intr_an' : ''} max-[430px]:mx-[1.08rem] max-[650px]:mt-[1rem] max-[650px]:mx-[1.5rem] poppins_font relative max-w-[500px] text-[14px] text-center text-[var(--grayM)]`}><span className="wave select-none">👋</span> Hi, I’m Zach a creative frontend developer. I design and build clean, responsive, and user-friendly websites that bring ideas to life.</p>
                   <div id="title_btns" className={`${intr ? 'intr_an' : ''} relative flex gap-[1rem] mt-9`}>
-                     <button id="ss" className="poppins_font flex-center rounded-md cursor-pointer gap-3 px-[1rem] py-[.6rem] text-[13px] text-[var(--foo-lg)] bg-[var(--text-clr)]">
+                     <Link to="/project" id="ss" className="poppins_font flex-center rounded-md cursor-pointer gap-3 px-[1rem] py-[.6rem] text-[13px] text-[var(--foo-lg)] bg-[var(--text-clr)]">
                         {right_i}
                         Go to projects
-                     </button>
+                     </Link>
                      <button onClick={()=>{ window.open(resume, '_blank') }} className="poppins_font flex-center rounded-md cursor-pointer px-[1.4rem] py-[.6rem] text-[13px] text-[var(--text-clr)] border border-[var(--text-clr)]">
                         Resume
                      </button>
