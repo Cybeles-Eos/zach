@@ -7,7 +7,8 @@ import Home from './assets/pages/home.jsx'
 import Project from './assets/pages/project.jsx'
 import About from './assets/pages/about.jsx'
 import AniHome from './assets/pages/anima_home.jsx'
-
+import NoPage from './assets/pages/404.jsx'
+import Quotes from './assets/pages/quotes.jsx'
 
 createRoot(document.getElementById('root')).render(
   <HashRouter>
@@ -17,6 +18,8 @@ createRoot(document.getElementById('root')).render(
         <Route path='/home' element={<Home />}/>
         <Route path='/project' element={<Project />}/>
         <Route path='/about' element={<About />}/>
+        <Route path='/quotes' element={<Quotes />}/>
+        <Route path='/*' element={<NoPage />}/>
       </Route>
     </Routes>
   </HashRouter>

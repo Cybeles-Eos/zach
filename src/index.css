@@ -623,3 +623,9 @@ p{
   opacity: 1 !important;
     transform: translateY(0rem) !important;
 }
+
+#quotes-text{
+  font-size: 1.6rem;
+  line-height: 33px;
+  font-family: 'Times New Roman', Times, serif;
+}
