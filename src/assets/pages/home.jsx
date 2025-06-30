@@ -51,7 +51,8 @@ function Home(){
    const { ref: intro, revealed: intr } = useReveal(0.3);
    const { ref: profile, revealed: pro } = useReveal(0.5);
    const { ref: services, revealed: serv } = useReveal(0.4);
-   const { ref: works, revealed: work } = useReveal(1, true, '-80px');
+   const offset0 = window.innerWidth <= 600 ? '0px' : '-80px';
+   const { ref: works, revealed: work } = useReveal(1, true, offset0);
    const { ref: works1, revealed: work1 } = useReveal(0.8);
    const { ref: works2, revealed: work2, } = useReveal(0.8);
    const { ref: whymeCon, revealed: whyme, } = useReveal(0.9);
@@ -179,7 +180,7 @@ function Home(){
                            <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - REACT</p>
                            <button onClick={()=>{ window.open('https://cybeles-eos.github.io/JobsField', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
-                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">JobsField</h3>
+                        <h3 className="text-[20px] font-[300] poppins_font  text-[var(--text-clr)]">JobsField</h3>
                         <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
                      </div>
                   </article>
@@ -193,7 +194,7 @@ function Home(){
                            <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - REACT</p>
                            <button onClick={()=>{ window.open('https://cybeles-eos.github.io/Cook-Good', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
-                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">CookGood</h3>
+                        <h3 className="text-[20px] font-[300] poppins_font  text-[var(--text-clr)]">CookGood</h3>
                         <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
                      </div>
                   </article>
@@ -207,7 +208,7 @@ function Home(){
                            <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - REACT</p>
                            <button onClick={()=>{ window.open('https://cybeles-eos.github.io/MyFont', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
-                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">MyFont</h3>
+                        <h3 className="text-[20px] font-[300] poppins_font  text-[var(--text-clr)]">MyFont</h3>
                         <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
                      </div>
                   </article>
@@ -221,7 +222,7 @@ function Home(){
                            <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - REACT</p>
                            <button onClick={()=>{ window.open('https://cybeles-eos.github.io/Noto', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
-                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">Noto</h3>
+                        <h3 className="text-[20px] font-[300] poppins_font  text-[var(--text-clr)]">Noto</h3>
                         <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
                      </div>
                   </article>

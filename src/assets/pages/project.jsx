@@ -112,7 +112,7 @@ function Project(){
                            <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS</p>
                            <button onClick={()=>{ window.open('https://cybeles-eos.github.io/JobsField', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
-                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">JobsField</h3>
+                        <h3 className="text-[20px] font-[300] poppins_font text-[var(--text-clr)]">JobsField</h3>
                         <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
                      </div>
                   </article>
@@ -126,7 +126,7 @@ function Project(){
                            <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS</p>
                            <button onClick={()=>{ window.open('https://cybeles-eos.github.io/Cook-Good', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
-                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">CookGood</h3>
+                        <h3 className="text-[20px] font-[300] poppins_font text-[var(--text-clr)]">CookGood</h3>
                         <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
                      </div>
                   </article>
@@ -140,7 +140,7 @@ function Project(){
                            <p className="text-[var(--grayM)] text-[13px]">JS - CSS - REACT</p>
                            <button onClick={()=>{ window.open('https://cybeles-eos.github.io/MyFont', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
-                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">MyFont</h3>
+                        <h3 className="text-[20px] font-[300] poppins_font text-[var(--text-clr)]">MyFont</h3>
                         <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
                      </div>
                   </article>
@@ -154,7 +154,7 @@ function Project(){
                            <p className="text-[var(--grayM)] text-[13px]">Tailwind CSS - JS - REACT</p>
                            <button onClick={()=>{ window.open('https://cybeles-eos.github.io/Noto', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
-                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">Noto</h3>
+                        <h3 className="text-[20px] font-[300] poppins_font text-[var(--text-clr)]">Noto</h3>
                         <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
                      </div>
                   </article>
@@ -168,7 +168,7 @@ function Project(){
                            <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - JS - API</p>
                            <button onClick={()=>{ window.open('https://cybeles-eos.github.io/WeatherPH', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
-                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">weather PH</h3>
+                        <h3 className="text-[20px] font-[300] poppins_font text-[var(--text-clr)]">weather PH</h3>
                         <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
                      </div>
                   </article>
@@ -182,7 +182,7 @@ function Project(){
                            <p className="text-[var(--grayM)] text-[13px]">HTML - CSS - jQuery - PHP</p>
                            <button onClick={()=>{ window.open('https://github.com/Cybeles-Eos/AlumniNet', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
-                        <h3 className="text-[20px] font-semibold text-[var(--text-clr)]">AlumniNet</h3>
+                        <h3 className="text-[20px] font-[300] poppins_font text-[var(--text-clr)]">AlumniNet</h3>
                         <p className="text-[var(--grayM)] max-w-[450px] mt-1">A simple app that lets users create notes and to-do lists. Stay organized by writing things down and tracking your tasks with ease.</p>
                      </div>
                   </article>
