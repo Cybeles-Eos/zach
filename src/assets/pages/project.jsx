@@ -89,7 +89,7 @@ function Project(){
                      </div>
                      <br />
                      <p className={`${invrpls ? 'txt_i' : ''} delay-200 txt_ani_3 animate-style delay text-[var(--grayM)] text-justify  max-w-[600px]`}>
-                        LiteShuttle is your reliable partner for safe, affordable, and stress-free airport transportation. Built for comfort and convenience, it connects cities to major U.S. airports with non-stop, on-time shuttle service—perfect for business trips, vacations, or heading home.
+                        LiteShuttle is your reliable partner for safe, affordable, and stress-free airport transportation. Built for comfort and convenience, it connects cities to major U.S. airports with non-stop, on-time shuttle service perfect for business trips, vacations, or heading home.
                      </p>
                      
                      <div className={`${invrpls ? 'txt_i' : ''} txt_ani_3 animate-style delay-300`}> 
