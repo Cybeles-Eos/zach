@@ -8,11 +8,11 @@ function Footer(){
          <footer className={style.foo}>
             <section className={style.foo_body}>
                <Link to='/home' className={`${style.logo}`}><span>{codepen}</span>zach</Link>
-               <p>© 2025 zach. All rights reserved. Built with HTML, Tailwind CSS, JavaScript, and React + Vite. Need a website or frontend help? Email me at — dawnzach10@gmail.com.</p>
+               <p>© 2025 zach. All rights reserved. Built with HTML, Tailwind CSS, JavaScript, and React + Vite. Need a website or frontend help? Email me at — <a href="mailto:dawnzach10@gmail.com" className="z-10 relative text-[#0044ff] underline">dawnzach10@gmail.com</a>.</p>
                <div className={style.foo_soc_term}>
                   <div className={style.term_box}>
-                     <p>Privacy Policy</p>
-                     <p>Terms of Service</p>
+                     <Link to="/privacy-policy" className='z-10'>Privacy Policy</Link>
+                     <Link to="/terms-of-service" className='z-10'>Terms of Service</Link>
                   </div>
                   <div className={style.soc_box}>
                      <p className={style.con}>Connect:</p>

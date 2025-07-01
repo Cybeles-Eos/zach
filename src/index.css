@@ -487,7 +487,7 @@ p{
 
 #whyme{
   transition: all 1s;
-  transform: scale(.95) translateY(-1rem);
+  transform: scale(.95) translateY(2.3rem);
   opacity: 0;  
 }
 .showme{
@@ -583,7 +583,11 @@ p{
     left: 50%;
   }
 }
-
+@media (max-width: 450px){
+  #ffi{
+    font-size: 13.85px !important;
+  }
+}
 
 
 

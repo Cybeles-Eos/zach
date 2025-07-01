@@ -14,6 +14,9 @@ import weatherph from '/weatherph.png'
 import alimninet from '/alumninet.png'
 import lslogo from '/liteshuttle.webp'
 import lspage from '/liteshuttlepage.png'
+import jquerylogo from '/jquery.svg'
+import laravellogo from '/laravel.svg'
+
 function useReveal(threshold = 0.5, once = true, rm = '0px') {
    const [revealed, setRevealed] = useState(false);
    const { ref, inView } = useInView({
@@ -72,16 +75,25 @@ function Project(){
             <section className="max-w-[1300px] relative px-6 mx-auto mt-30">
                <div className="flex md:flex-row flex-col md:gap-15 gap-10 mb-25">
                   <div ref={rpls} className="mt-2 z-10">
-                     <p className={`${invrpls ? 'txt_i' : ''} txt_ani_3 animate-style text-[14px] uppercase text-[var(--grayM)]`}>Projects i involved</p>
-                     <div className={`${invrpls ? 'txt_i' : ''} txt_ani_3 animate-style`}>
-                        <h1 className={`stm-title leading-8 uppercase`}>Liteshuttle</h1>
+                     
+                     <div className={`${invrpls ? 'txt_i' : ''} txt_ani_3 flex items-center justify-between animate-style`}>
+                        <div>
+                           <p className={` text-[14px] uppercase text-[var(--grayM)]`}>Projects i involved</p>
+                           <h1 className={`stm-title leading-8 uppercase`}>Liteshuttle</h1>
+                        </div>
+                        <div className="flex items-center h-[3rem] overflow-hidden">
+                           <img src={laravellogo} className="h-[2.5rem]" alt="" />
+                           <img src={jquerylogo} className="h-[5rem]" alt="" />
+                           
+                        </div>
                      </div>
                      <br />
                      <p className={`${invrpls ? 'txt_i' : ''} delay-200 txt_ani_3 animate-style delay text-[var(--grayM)] text-justify  max-w-[600px]`}>
                         LiteShuttle is your reliable partner for safe, affordable, and stress-free airport transportation. Built for comfort and convenience, it connects cities to major U.S. airports with non-stop, on-time shuttle service—perfect for business trips, vacations, or heading home.
                      </p>
+                     
                      <div className={`${invrpls ? 'txt_i' : ''} txt_ani_3 animate-style delay-300`}> 
-                        <button onClick={()=>{ window.open('https://www.liteshuttle.com', '_blank') }} className={` px-5 mt-7 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]`}>Visit website</button>
+                        <button onClick={()=>{ window.open('https://www.liteshuttle.com', '_blank') }} className={` px-5 mt-7 select-none cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]`}>Visit website</button>
                      </div>
                      
                   </div>
