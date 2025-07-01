@@ -181,7 +181,7 @@ function Project(){
                            <button onClick={()=>{ window.open('https://cybeles-eos.github.io/WeatherPH', '_blank') }} className="px-5 cursor-pointer rounded-[5px] hover:opacity-90 py-1 bg-[var(--text-clr)] text-[13px] text-[var(--bg-clr)]">view</button>
                         </div>
                         <h3 className="text-[20px] font-[300] poppins_font text-[var(--text-clr)]">weather PH</h3>
-                        <p className="text-[var(--grayM)] max-w-[450px] mt-1">A smart chatbot that helps school alumni stay updated on events, opportunities, and community news through real-time conversations.</p>
+                        <p className="text-[var(--grayM)] max-w-[450px] mt-1">A weather forecasting app focused on Philippine locations. It provides real-time temperature, conditions, and multi-day forecasts using a clean, mobile-friendly interface.</p>
                      </div>
                   </article>
                   
