@@ -20,7 +20,7 @@ function Privacy(){
                     <br /><br />
                     This site may use basic analytics tools to understand general visitor traffic, but no personally identifiable information is tracked. By browsing this website, you agree to this basic, respectful privacy approach.
                     <br /><br />
-                    If you have any concerns about data or privacy, feel free to contact me directly via <a href="mailto:dawnzach10@gmail.com" className="z-10 relative text-[#0044ff] underline">dawnzach10@gmail.com</a> provided on the site.
+                    If you have any concerns about data or privacy, feel free to contact me directly via <a href="mailto:dawnzach10@gmail.com" className="z-10 relative text-[#336aff] underline">dawnzach10@gmail.com</a> provided on the site.
                 </p>
             </div>
 

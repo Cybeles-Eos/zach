@@ -24,7 +24,7 @@ function Terms(){
                     <br /><br />
                     I reserve the right to update or change these terms at any time without prior notice. Continued use of the website after any changes implies acceptance of the revised terms.
                     <br /><br />
-                    For questions or clarifications regarding these terms, you may contact me directly at <a href="mailto:dawnzach10@gmail.com" className="z-10 relative text-[#0044ff] underline">dawnzach10@gmail.com</a>.
+                    For questions or clarifications regarding these terms, you may contact me directly at <a href="mailto:dawnzach10@gmail.com" className="z-10 relative text-[#336aff] underline">dawnzach10@gmail.com</a>.
                 </p>
             </div>
 
