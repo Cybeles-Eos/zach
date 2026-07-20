@@ -59,6 +59,9 @@ function Quotes(){
                 <SerVBox title={"Roy T. Bennett"} text={"Let the improvement of yourself keep you so busy that you have no time to criticize others."}/>
                 <SerVBox title={"Niccolo Machiavelli"} text={"Men are more ready to offend one who desires to be beloved than one who wishes to be feared."}/>
                 <SerVBox title={"Edsger W. Dijkstra"} text={"The art of programming is the art of organizing complexity, of mastering multitude and avoiding its bastard chaos as effectively as possible."}/>
+                <SerVBox title={"Frederick Douglass"} text={"If there is no struggle, there is no progress."}/>
+                <SerVBox title={"Karen E. Quinones Miller"} text={"When someone tells me ‘no,’ it doesn’t mean I can’t do it, it simply means I can’t do it with them."}/>
+                <SerVBox title={"Frederick Douglass"} text={""}/>
             </section>
 
 
