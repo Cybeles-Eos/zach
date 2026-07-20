@@ -61,7 +61,7 @@ function Quotes(){
                 <SerVBox title={"Edsger W. Dijkstra"} text={"The art of programming is the art of organizing complexity, of mastering multitude and avoiding its bastard chaos as effectively as possible."}/>
                 <SerVBox title={"Frederick Douglass"} text={"If there is no struggle, there is no progress."}/>
                 <SerVBox title={"Karen E. Quinones Miller"} text={"When someone tells me ‘no,’ it doesn’t mean I can’t do it, it simply means I can’t do it with them."}/>
-                <SerVBox title={"Frederick Douglass"} text={""}/>
+                <SerVBox title={"Lolly Daskal"} text={"When you stop chasing the wrong things you give the right things a chance to catch you."}/>
             </section>
 
 
