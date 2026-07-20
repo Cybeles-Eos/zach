@@ -86,7 +86,6 @@ function Home(){
       <>
          {/* <Lottie animationData={global}/> */}
          <main id="home_content" className="w-full relative mb-5"> 
-   
             <section ref={intro} className="main_content max-w-[1100px] pb-10 mx-auto z-10 relative overflow-hidden p-4">
                <img className={`${intr ? 'spr_' : ''} spiral-animation h-[30rem] select-none min-w-min absolute opacity-[var(--img-opa)] left-1/2 transform -translate-x-1/2`} src={spiral_img} alt="" />
                <div className="max-[650px]:mt-[13rem] w-full flex flex-col items-center relative z-30 mt-[12rem]">

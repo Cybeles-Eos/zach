@@ -1,5 +1,7 @@
 import { createRoot } from 'react-dom/client'
-import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
 import './index.css'
 
 import Nav from './assets/components/nav.jsx'
@@ -13,7 +15,7 @@ import Terms from './assets/pages/terms.jsx'
 import Privacy from './assets/pages/privacy.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <HashRouter>
+  <BrowserRouter basename={basename || undefined}>
     <Routes>
       <Route path='/' element={<Nav />}>
         <Route index element={<AniHome />}/>
@@ -23,9 +25,8 @@ createRoot(document.getElementById('root')).render(
         <Route path='/quotes' element={<Quotes />}/>
         <Route path='/privacy-policy' element={<Privacy />}/>
         <Route path='/terms-of-service' element={<Terms />}/>
-        <Route path='/quotes' element={<Quotes />}/>
         <Route path='/*' element={<NoPage />}/>
       </Route>
     </Routes>
-  </HashRouter>
+  </BrowserRouter>
 );
